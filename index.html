@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ibrahima Diagne | Chanteur religieux thiantacone</title>
+  <meta name="description"
+    content="Site officiel d'Ibrahima Diagne, chanteur religieux thiantacone de Serigne Béthio. Albums, sons classés par date, paroles et actualités.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="#accueil" aria-label="Accueil Ibrahima Diagne">
+      <span class="brand-mark">ID</span>
+      <span>Ibrahima Diagne</span>
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="#albums">Albums</a>
+      <a href="#lyrics">Paroles</a>
+      <a href="#paiements">Paiements</a>
+      <a href="#biographie">Biographie</a>
+      <a href="#actualites">Actualités</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="accueil" class="hero">
+      <div class="hero-media">
+        <img class="hero-image" src="assets/images/serigne-bethio-thioune.jpg" alt="Serigne Béthio Thioune">
+        <div class="hero-card">
+          <span>Son en vedette</span>
+          <strong>Sant Serigne Saliou 99</strong>
+          <button class="featured-play" type="button" data-featured-audio="https://ibrahima-diagne-bucket.s3.us-east-1.amazonaws.com/ibrahima-diagne-1999/Sant+Serigne+Saliou99.mp3">Écouter le son vedette</button>
+          <div id="featuredAudioSlot"></div>
+          <small>Album Ibrahima Diagne 1999</small>
+        </div>
+      </div>
+      <div class="hero-copy">
+        <div class="status-pill">Archives musicales thiantacones</div>
+        <p class="eyebrow">Chants religieux thiantacone</p>
+        <h1>Ibrahima Diagne, la voix dédiée à Serigne Béthio</h1>
+        <p class="lead">Un espace dédié aux chants religieux, aux albums classés par date, aux paroles et à la mémoire
+          musicale d'Ibrahima Diagne.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#albums">Écouter les sons</a>
+          <a class="button ghost" href="#biographie">Découvrir l'artiste</a>
+        </div>
+        <div class="trust-row" aria-label="Informations principales">
+          <span>Albums classés</span>
+          <span>Paroles</span>
+          <span>Écoute en ligne</span>
+          <span>Distribution officielle</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro-band">
+      <div>
+        <p class="eyebrow">Présentation</p>
+        <h2>Un espace officiel pour écouter, lire et conserver les chants.</h2>
+      </div>
+      <p>Le site rassemble les albums, les sons et les paroles dans une présentation claire, respectueuse et accessible
+        à la communauté thiantacone.</p>
+    </section>
+
+    <section class="feature-row" aria-label="Points forts du site">
+      <article>
+        <span>01</span>
+        <strong>Catalogue audio</strong>
+        <p>Les chants sont organisés par album, avec une écoute simple et directe.</p>
+      </article>
+      <article>
+        <span>02</span>
+        <strong>Classement clair</strong>
+        <p>Albums, dates, recherche et paroles regroupés au même endroit.</p>
+      </article>
+      <article>
+        <span>03</span>
+        <strong>Distribution encadrée</strong>
+        <p>Les options d'achat sont réservées à la distribution officielle des contenus.</p>
+      </article>
+    </section>
+
+    <section id="albums" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Catalogue</p>
+        <h2>Albums et sons classés par date</h2>
+        <p>Filtrer par album, retrouver un titre et consulter les paroles associées à chaque chant.</p>
+      </div>
+
+      <div class="catalog-toolbar">
+        <label>
+          Album
+          <select id="albumFilter"></select>
+        </label>
+        <label>
+          Recherche
+          <input id="searchInput" type="search" placeholder="Titre, album, année...">
+        </label>
+      </div>
+
+      <div id="albumGrid" class="album-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="paiements" class="payments">
+      <div>
+        <p class="eyebrow">Paiements</p>
+        <h2>Distribution numérique officielle</h2>
+        <p>Les achats en ligne ne sont pas ouverts sur cette version du site. Les moyens de paiement seront affichés
+          uniquement pour les canaux validés officiellement.</p>
+      </div>
+      <div class="payment-grid">
+        <article class="payment-card wave">
+          <span>Wave</span>
+          <strong>Service non ouvert</strong>
+          <button type="button" disabled>Achat indisponible</button>
+        </article>
+        <article class="payment-card orange">
+          <span>Orange Money</span>
+          <strong>Service non ouvert</strong>
+          <button type="button" disabled>Achat indisponible</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="lyrics" class="section lyrics-section">
+      <div class="section-heading">
+        <p class="eyebrow">Paroles</p>
+        <h2>Paroles du son sélectionné</h2>
+        <p>Chaque chant peut être accompagné de ses paroles pour faciliter l'écoute et la transmission.</p>
+      </div>
+      <article id="lyricsPanel" class="lyrics-panel"></article>
+    </section>
+
+    <section id="biographie" class="bio">
+      <div class="bio-card">
+        <p class="eyebrow">Biographie</p>
+        <h2>Une voix au service du thiant</h2>
+        <p>Ibrahima Diagne est présenté ici comme chanteur religieux thiantacone, attaché à la transmission, au respect
+          et à la mémoire des chants dédiés à Serigne Béthio.</p>
+        <p>Dans un entretien publié par Leral.net le 26 janvier 2013, il est présenté comme l'un des leaders du Sikarr.
+          Il y explique avoir mis 26 albums sur le marché depuis 1998 et défend une musique spirituelle qui oriente
+          l'écoute vers Allah, le Prophète et les grands érudits de l'islam.</p>
+        <a class="source-link" href="https://www.leral.net/Ibrahima-Diagne-Cheikh-Bethio-est-ma-chance_a71668.html"
+          target="_blank" rel="noreferrer">Lire l'article source sur Leral.net</a>
+      </div>
+      <div class="stats">
+        <div><strong id="trackCount">0</strong><span>Sons disponibles</span></div>
+        <div><strong id="albumCount">0</strong><span>Albums</span></div>
+        <div><strong>26</strong><span>Albums cités dans la presse</span></div>
+      </div>
+    </section>
+
+    <section id="actualites" class="section news">
+      <div class="section-heading">
+        <p class="eyebrow">Actualités</p>
+        <h2>Rubriques du site</h2>
+      </div>
+      <div class="news-grid">
+        <article>
+          <span>01</span>
+          <h3>Nouveaux sons</h3>
+          <p>Annonce des prochaines sorties et ajout automatique dans le catalogue.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Vidéos et thiants</h3>
+          <p>Clips, prestations et archives vidéo autour des grands moments de thiant.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Événements</h3>
+          <p>Repère pour les cérémonies, rencontres et grands moments religieux.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Pour booking, archives ou gestion du catalogue</h2>
+        <p>Pour les demandes de booking, les archives audio, les médias officiels ou les informations de distribution.
+        </p>
+      </div>
+      <form class="contact-form">
+        <label>Nom<input type="text" placeholder="Votre nom"></label>
+        <label>Message<textarea placeholder="Votre message"></textarea></label>
+        <button class="button primary" type="button">Envoyer la demande</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>&copy; 2026 Ibrahima Diagne</span>
+    <span>Achats en ligne non ouverts sur cette version.</span>
+  </footer>
+
+  <script src="scripts/app.js"></script>
+</body>
+
+</html>

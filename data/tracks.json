@@ -1,0 +1,153 @@
+{
+  "s3BaseUrl": "https://ibrahima-diagne-bucket.s3.us-east-1.amazonaws.com",
+  "albums": [
+    {
+      "id": "ibrahima-diagne-1999",
+      "title": "Ibrahima Diagne 1999",
+      "year": "1999",
+      "date": "1999-01-01",
+      "description": "Archives audio de l'année 1999.",
+      "tracks": [
+        {
+          "id": "sant-serigne-saliou-99",
+          "title": "Sant Serigne Saliou 99",
+          "date": "1999-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-1999/Sant+Serigne+Saliou99.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ibrahima-diagne-2000",
+      "title": "Ibrahima Diagne 2000",
+      "year": "2000",
+      "date": "2000-01-01",
+      "description": "Archives audio de l'année 2000.",
+      "tracks": []
+    },
+    {
+      "id": "ibrahima-diagne-2001",
+      "title": "Ibrahima Diagne 2001",
+      "year": "2001",
+      "date": "2001-01-01",
+      "description": "Archives audio de l'année 2001.",
+      "tracks": []
+    },
+    {
+      "id": "ibrahima-diagne-2002",
+      "title": "Ibrahima Diagne 2002",
+      "year": "2002",
+      "date": "2002-01-01",
+      "description": "Archives audio de l'année 2002.",
+      "tracks": []
+    },
+    {
+      "id": "ibrahima-diagne-2003",
+      "title": "Ibrahima Diagne 2003",
+      "year": "2003",
+      "date": "2003-01-01",
+      "description": "Archives audio de l'année 2003.",
+      "tracks": []
+    },
+    {
+      "id": "ibrahima-diagne-2004",
+      "title": "Ibrahima Diagne 2004",
+      "year": "2004",
+      "date": "2004-01-01",
+      "description": "Archives audio de l'année 2004.",
+      "tracks": []
+    },
+    {
+      "id": "ibrahima-diagne-2005",
+      "title": "Ibrahima Diagne 2005",
+      "year": "2005",
+      "date": "2005-01-01",
+      "description": "Archives audio de l'année 2005.",
+      "tracks": []
+    },
+    {
+      "id": "ibrahima-diagne-2006",
+      "title": "Ibrahima Diagne 2006",
+      "year": "2006",
+      "date": "2006-01-01",
+      "description": "Archives audio de l'année 2006.",
+      "tracks": []
+    },
+    {
+      "id": "ibrahima-diagne-2007",
+      "title": "Ibrahima Diagne 2007",
+      "year": "2007",
+      "date": "2007-01-01",
+      "description": "Archives audio de l'année 2007.",
+      "tracks": []
+    },
+    {
+      "id": "ibrahima-diagne-2008",
+      "title": "Ibrahima Diagne 2008",
+      "year": "2008",
+      "date": "2008-01-01",
+      "description": "Archives audio de l'année 2008.",
+      "tracks": []
+    },
+    {
+      "id": "ibrahima-diagne-2010",
+      "title": "Ibrahima Diagne 2010",
+      "year": "2010",
+      "date": "2010-01-01",
+      "description": "Archives audio de l'année 2010.",
+      "tracks": []
+    },
+    {
+      "id": "ibrahima-diagne-2011",
+      "title": "Ibrahima Diagne 2011",
+      "year": "2011",
+      "date": "2011-01-01",
+      "description": "Archives audio de l'année 2011.",
+      "tracks": []
+    },
+    {
+      "id": "ibrahima-diagne-2012",
+      "title": "Ibrahima Diagne 2012",
+      "year": "2012",
+      "date": "2012-01-01",
+      "description": "Archives audio de l'année 2012.",
+      "tracks": []
+    },
+    {
+      "id": "ibrahima-diagne-2014",
+      "title": "Ibrahima Diagne 2014",
+      "year": "2014",
+      "date": "2014-01-01",
+      "description": "Archives audio de l'année 2014.",
+      "tracks": []
+    },
+    {
+      "id": "ibrahima-diagne-2015",
+      "title": "Ibrahima Diagne 2015",
+      "year": "2015",
+      "date": "2015-01-01",
+      "description": "Archives audio de l'année 2015.",
+      "tracks": []
+    },
+    {
+      "id": "ibrahima-diagne-2016",
+      "title": "Ibrahima Diagne 2016",
+      "year": "2016",
+      "date": "2016-01-01",
+      "description": "Archives audio de l'année 2016.",
+      "tracks": []
+    },
+    {
+      "id": "ibrahima-diagne-2017",
+      "title": "Ibrahima Diagne 2017",
+      "year": "2017",
+      "date": "2017-01-01",
+      "description": "Archives audio de l'année 2017.",
+      "tracks": []
+    }
+  ]
+}
