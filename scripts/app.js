@@ -106,14 +106,6 @@ function renderCatalog() {
   }
 
   els.albumGrid.innerHTML = filteredAlbums.map(renderAlbum).join("");
-  document.querySelectorAll("[data-lyrics-id]").forEach((button) => {
-    button.addEventListener("click", () => {
-      state.activeTrackId = button.dataset.lyricsId;
-      renderLyrics(activeTrack());
-      document.querySelector("#lyrics").scrollIntoView({ behavior: "smooth", block: "start" });
-    });
-  });
-  setupAudioAutopause();
 }
 
 function renderAlbum(album) {
@@ -127,44 +119,24 @@ function renderAlbum(album) {
       <div>
         <h3>${album.tracks.length} son${album.tracks.length > 1 ? "s" : ""}</h3>
         <a class="album-open" href="album.html?id=${album.id}">Ouvrir la page album</a>
-        <div class="track-list">
-          ${album.tracks.length ? album.tracks.map((track) => renderTrack(track, album)).join("") : renderEmptyAlbum()}
-        </div>
+        ${renderAlbumPreview(album)}
       </div>
     </article>
   `;
 }
 
-function renderEmptyAlbum() {
-  return `
-    <article class="track empty-track">
-      <div>
-        <h3>Archives à compléter</h3>
-        <div class="track-meta">Les sons de cet album seront ajoutés après vérification des fichiers audio.</div>
-      </div>
-    </article>
-  `;
-}
+function renderAlbumPreview(album) {
+  if (!album.tracks.length) {
+    return `<p class="album-preview">Archives à compléter.</p>`;
+  }
 
-function renderTrack(track, album) {
-  const src = `${state.s3BaseUrl}/${track.audio}`;
-  const meta = [album.title, displayTrackDate(track.date), track.duration].filter(Boolean).join(" • ");
+  const preview = album.tracks.slice(0, 3).map((track) => `<li>${track.title}</li>`).join("");
+  const remaining = album.tracks.length > 3 ? `<li>+ ${album.tracks.length - 3} autre${album.tracks.length - 3 > 1 ? "s" : ""} son${album.tracks.length - 3 > 1 ? "s" : ""}</li>` : "";
   return `
-    <article class="track">
-      <div class="track-top">
-        <div>
-          <h3>${track.title}</h3>
-          <div class="track-meta">${meta}</div>
-        </div>
-        ${track.price ? `<strong>${track.price}</strong>` : ""}
-      </div>
-      <audio controls preload="none" src="${src}"></audio>
-      <div class="track-actions">
-        <button class="small-button" data-lyrics-id="${track.id}" type="button">Voir paroles</button>
-        <button class="small-button disabled" type="button" disabled>Wave indisponible</button>
-        <button class="small-button disabled" type="button" disabled>Orange Money indisponible</button>
-      </div>
-    </article>
+    <ul class="album-preview-list">
+      ${preview}
+      ${remaining}
+    </ul>
   `;
 }
 

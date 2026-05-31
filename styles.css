@@ -441,6 +441,27 @@ textarea {
   line-height: 1;
 }
 
+.album-preview,
+.album-preview-list {
+  margin: 4px 0 0;
+  color: var(--muted);
+}
+
+.album-preview-list {
+  display: grid;
+  gap: 8px;
+  padding: 0;
+  list-style: none;
+}
+
+.album-preview-list li {
+  padding: 10px 12px;
+  background: #fbfffc;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-weight: 800;
+}
+
 .album-detail-hero {
   padding: clamp(48px, 8vw, 96px) clamp(18px, 5vw, 72px);
   color: #f6fff9;
