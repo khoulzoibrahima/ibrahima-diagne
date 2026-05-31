@@ -126,6 +126,7 @@ function renderAlbum(album) {
       </div>
       <div>
         <h3>${album.tracks.length} son${album.tracks.length > 1 ? "s" : ""}</h3>
+        <a class="album-open" href="album.html?id=${album.id}">Ouvrir la page album</a>
         <div class="track-list">
           ${album.tracks.length ? album.tracks.map((track) => renderTrack(track, album)).join("") : renderEmptyAlbum()}
         </div>

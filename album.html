@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Album | Ibrahima Diagne</title>
+    <meta name="description" content="Page album des archives musicales d'Ibrahima Diagne.">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html#accueil" aria-label="Accueil Ibrahima Diagne">
+        <span class="brand-mark">ID</span>
+        <span>Ibrahima Diagne</span>
+      </a>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="index.html#albums">Albums</a>
+        <a href="index.html#lyrics">Paroles</a>
+        <a href="index.html#paiements">Paiements</a>
+        <a href="index.html#biographie">Biographie</a>
+        <a href="index.html#actualites">Actualités</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="album-detail-hero">
+        <a class="back-link" href="index.html#albums">Retour aux albums</a>
+        <p class="eyebrow">Page album</p>
+        <h1 id="albumTitle">Album</h1>
+        <p id="albumDescription" class="lead"></p>
+      </section>
+
+      <section class="section album-detail-section">
+        <div class="section-heading">
+          <p class="eyebrow">Sons</p>
+          <h2 id="albumTrackCount">Sons de l'album</h2>
+        </div>
+        <div id="albumTracks" class="track-list"></div>
+      </section>
+
+      <section class="section lyrics-section">
+        <div class="section-heading">
+          <p class="eyebrow">Paroles</p>
+          <h2>Paroles du son sélectionné</h2>
+        </div>
+        <article id="albumLyricsPanel" class="lyrics-panel"></article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>&copy; 2026 Ibrahima Diagne</span>
+      <span>Achats en ligne non ouverts sur cette version.</span>
+    </footer>
+
+    <script src="scripts/album.js"></script>
+  </body>
+</html>
