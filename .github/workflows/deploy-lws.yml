@@ -23,8 +23,8 @@ jobs:
       - name: Upload files to LWS
         uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
-          server: ${{ secrets.LWS_FTP_SERVER }}
-          username: ${{ secrets.LWS_FTP_USERNAME }}
+          server: ${{ vars.LWS_FTP_SERVER }}
+          username: ${{ vars.LWS_FTP_USERNAME }}
           password: ${{ secrets.LWS_FTP_PASSWORD }}
           local-dir: ./
           server-dir: ./
