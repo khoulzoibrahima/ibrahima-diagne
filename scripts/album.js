@@ -4,6 +4,8 @@ const albumState = {
   activeTrackId: null
 };
 
+const DATA_VERSION = "20260605-lyrics-2000";
+
 const albumEls = {
   title: document.querySelector("#albumTitle"),
   description: document.querySelector("#albumDescription"),
@@ -15,7 +17,7 @@ const albumEls = {
 async function initAlbumPage() {
   try {
     const albumId = new URLSearchParams(window.location.search).get("id");
-    const response = await fetch("data/tracks.json");
+    const response = await fetch(`data/tracks.json?v=${DATA_VERSION}`);
     const data = await response.json();
     albumState.s3BaseUrl = data.s3BaseUrl.replace(/\/$/, "");
     albumState.album = data.albums.find((album) => album.id === albumId) || data.albums[0];

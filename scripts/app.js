@@ -4,6 +4,8 @@ const state = {
   activeTrackId: null
 };
 
+const DATA_VERSION = "20260605-lyrics-2000";
+
 const els = {
   albumFilter: document.querySelector("#albumFilter"),
   searchInput: document.querySelector("#searchInput"),
@@ -19,7 +21,7 @@ const els = {
 async function init() {
   try {
     setupFeaturedAudio();
-    const response = await fetch("data/tracks.json");
+    const response = await fetch(`data/tracks.json?v=${DATA_VERSION}`);
     const data = await response.json();
     state.albums = data.albums;
     state.s3BaseUrl = data.s3BaseUrl.replace(/\/$/, "");
