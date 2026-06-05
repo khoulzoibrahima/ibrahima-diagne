@@ -110,20 +110,36 @@ function renderCatalog() {
 }
 
 function renderAlbum(album) {
+  const avatar = albumAvatarStyle(album);
   return `
-    <article class="album-card">
-      <div class="album-cover">
+    <a class="album-card" href="album.html?id=${album.id}" aria-label="Ouvrir ${album.title}" style="${avatar}">
+      <div class="album-cover album-avatar">
+        <i class="album-disc" aria-hidden="true"></i>
         <span>${album.year}</span>
         <strong>${album.title}</strong>
         <p>${album.description}</p>
       </div>
       <div>
         <h3>${album.tracks.length} son${album.tracks.length > 1 ? "s" : ""}</h3>
-        <a class="album-open" href="album.html?id=${album.id}">Ouvrir la page album</a>
         ${renderAlbumPreview(album)}
       </div>
-    </article>
+    </a>
   `;
+}
+
+function albumAvatarStyle(album) {
+  const palettes = [
+    ["#d6b24a", "#9b123a"],
+    ["#1db954", "#1468cf"],
+    ["#dc7f1f", "#8f1235"],
+    ["#7c5cff", "#d6b24a"],
+    ["#00a6a6", "#1d1d1d"],
+    ["#ff4d6d", "#2b2d42"]
+  ];
+  const index = Number(album.year) % palettes.length;
+  const [colorA, colorB] = palettes[index];
+  const tilt = (Number(album.year) % 28) + 118;
+  return `--avatar-a:${colorA};--avatar-b:${colorB};--avatar-tilt:${tilt}deg;`;
 }
 
 function renderAlbumPreview(album) {

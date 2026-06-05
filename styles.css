@@ -282,7 +282,6 @@ h3 {
 }
 
 .button,
-.album-open,
 .back-link,
 .small-button {
   display: inline-flex;
@@ -296,7 +295,6 @@ h3 {
 }
 
 .primary,
-.album-open,
 .back-link {
   color: #000;
   background: var(--green);
@@ -432,6 +430,7 @@ textarea {
   display: grid;
   gap: 12px;
   padding: 14px;
+  color: inherit;
   background: var(--card);
   border-radius: var(--radius);
   transition: background 160ms ease, transform 160ms ease;
@@ -452,7 +451,7 @@ textarea {
   overflow: hidden;
   color: var(--text);
   background:
-    linear-gradient(135deg, rgba(214, 178, 74, 0.9), rgba(155, 18, 58, 0.86)),
+    linear-gradient(var(--avatar-tilt, 135deg), var(--avatar-a, #d6b24a), var(--avatar-b, #9b123a)),
     #222;
   border-radius: 8px;
   box-shadow: 0 16px 34px rgba(0, 0, 0, 0.28);
@@ -461,15 +460,40 @@ textarea {
 .album-cover::before {
   content: "";
   position: absolute;
-  inset: 18%;
+  inset: 16%;
+  background:
+    radial-gradient(circle, rgba(0, 0, 0, 0.45) 0 12%, rgba(255, 255, 255, 0.18) 13% 14%, transparent 15%),
+    repeating-radial-gradient(circle, rgba(255, 255, 255, 0.18) 0 1px, transparent 1px 9px);
   border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: 50%;
+}
+
+.album-cover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, transparent 0 48%, rgba(0, 0, 0, 0.44) 100%),
+    radial-gradient(circle at 22% 18%, rgba(255, 255, 255, 0.28), transparent 22%);
+}
+
+.album-disc {
+  position: absolute;
+  right: -12%;
+  top: -12%;
+  width: 58%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle, #050505 0 12%, rgba(255, 255, 255, 0.38) 13% 14%, #111 15% 100%);
+  opacity: 0.34;
 }
 
 .album-cover span,
 .album-cover strong,
 .album-cover p {
   position: relative;
+  z-index: 1;
 }
 
 .album-cover span {
@@ -493,12 +517,6 @@ textarea {
   margin-bottom: 4px;
   color: var(--muted);
   font-size: 0.92rem;
-}
-
-.album-open {
-  width: max-content;
-  min-height: 36px;
-  font-size: 0.88rem;
 }
 
 .album-preview-list {
