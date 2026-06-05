@@ -7,26 +7,42 @@
   <title>Ibrahima Diagne | Chanteur religieux thiantacone</title>
   <meta name="description"
     content="Site officiel d'Ibrahima Diagne, chanteur religieux thiantacone de Serigne Béthio. Albums, sons classés par date, paroles et actualités.">
-  <link rel="stylesheet" href="styles.css?v=20260605-design">
+  <link rel="stylesheet" href="styles.css?v=20260605-musicapp">
 </head>
 
 <body>
-  <header class="site-header">
-    <a class="brand" href="#accueil" aria-label="Accueil Ibrahima Diagne">
-      <span class="brand-mark">ID</span>
-      <span>Ibrahima Diagne</span>
-    </a>
-    <nav class="nav" aria-label="Navigation principale">
-      <a href="#albums">Albums</a>
-      <a href="#lyrics">Paroles</a>
-      <a href="#paiements">Paiements</a>
-      <a href="#biographie">Biographie</a>
-      <a href="#actualites">Actualités</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Navigation musicale">
+      <a class="brand" href="#accueil" aria-label="Accueil Ibrahima Diagne">
+        <span class="brand-mark">ID</span>
+        <span>Ibrahima Diagne</span>
+      </a>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="#accueil">Accueil</a>
+        <a href="#albums">Bibliothèque</a>
+        <a href="#lyrics">Paroles</a>
+        <a href="#biographie">Biographie</a>
+      </nav>
+      <div class="sidebar-card">
+        <span>Archive</span>
+        <strong id="sidebarAlbumCount">17 albums</strong>
+        <small>Chants thiantacones classés par année</small>
+      </div>
+    </aside>
 
-  <main>
+    <div class="app-main">
+      <header class="topbar">
+        <a class="brand mobile-brand" href="#accueil" aria-label="Accueil Ibrahima Diagne">
+          <span class="brand-mark">ID</span>
+          <span>Ibrahima Diagne</span>
+        </a>
+        <div class="topbar-actions">
+          <a href="#albums">Albums</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </header>
+
+      <main>
     <section id="accueil" class="hero">
       <div class="hero-media">
         <img class="hero-image" src="assets/images/serigne-bethio-thioune.jpg" alt="Serigne Béthio Thioune">
@@ -105,7 +121,7 @@
       <div id="albumGrid" class="album-grid" aria-live="polite"></div>
     </section>
 
-    <section id="paiements" class="payments">
+        <section id="paiements" class="payments">
       <div>
         <p class="eyebrow">Paiements</p>
         <h2>Distribution numérique officielle</h2>
@@ -191,14 +207,16 @@
         <button class="button primary" type="button">Envoyer la demande</button>
       </form>
     </section>
-  </main>
+      </main>
 
-  <footer class="footer">
-    <span>&copy; 2026 Ibrahima Diagne</span>
-    <span>Achats en ligne non ouverts sur cette version.</span>
-  </footer>
+      <footer class="footer">
+        <span>&copy; 2026 Ibrahima Diagne</span>
+        <span>Achats en ligne non ouverts sur cette version.</span>
+      </footer>
+    </div>
+  </div>
 
-  <script src="scripts/app.js?v=20260605-design"></script>
+  <script src="scripts/app.js?v=20260605-musicapp"></script>
 </body>
 
 </html>

@@ -32,6 +32,8 @@ function renderAlbumPage() {
   const album = albumState.album;
   document.title = `${album.title} | Ibrahima Diagne`;
   albumEls.title.textContent = album.title;
+  const sidebarTitle = document.querySelector("#sidebarAlbumTitle");
+  if (sidebarTitle) sidebarTitle.textContent = album.title;
   albumEls.description.textContent = album.description;
   albumEls.trackCount.textContent = `${album.tracks.length} son${album.tracks.length > 1 ? "s" : ""} dans l'album`;
 

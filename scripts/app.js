@@ -11,6 +11,7 @@ const els = {
   lyricsPanel: document.querySelector("#lyricsPanel"),
   trackCount: document.querySelector("#trackCount"),
   albumCount: document.querySelector("#albumCount"),
+  sidebarAlbumCount: document.querySelector("#sidebarAlbumCount"),
   featuredPlay: document.querySelector("[data-featured-audio]"),
   featuredAudioSlot: document.querySelector("#featuredAudioSlot")
 };
@@ -164,6 +165,9 @@ function renderLyrics(track) {
 function renderStats() {
   els.albumCount.textContent = state.albums.length;
   els.trackCount.textContent = allTracks().length;
+  if (els.sidebarAlbumCount) {
+    els.sidebarAlbumCount.textContent = `${state.albums.length} albums`;
+  }
 }
 
 function formatDate(value) {
