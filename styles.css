@@ -250,6 +250,12 @@ p {
   min-width: 0;
 }
 
+.album-grid-player {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 130px));
+  gap: 18px 14px;
+}
+
 .playlist-cover {
   position: relative;
   width: 130px;
@@ -575,6 +581,15 @@ p {
 
   .playlist-card {
     flex: 0 0 130px;
+  }
+
+  .album-grid-player {
+    grid-template-columns: repeat(2, minmax(130px, 1fr));
+  }
+
+  .album-grid-player .playlist-card,
+  .album-grid-player .playlist-cover {
+    width: 100%;
   }
 
   .media-grid {
