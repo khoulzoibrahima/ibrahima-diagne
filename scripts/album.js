@@ -73,7 +73,7 @@ function setupAlbumEvents() {
   });
 
   albumEls.audio.addEventListener("ended", () => {
-    albumEls.playerToggle.textContent = "▶";
+    playNextTrack();
   });
 }
 
@@ -128,6 +128,19 @@ function playTrack(trackId) {
   albumEls.audio.play().catch(() => {
     albumEls.playerMeta.textContent = "Lecture indisponible pour le moment";
   });
+}
+
+function playNextTrack() {
+  const tracks = albumState.album?.tracks || [];
+  const currentIndex = tracks.findIndex((track) => track.id === albumState.currentTrackId);
+  const nextTrack = tracks[currentIndex + 1];
+
+  if (nextTrack) {
+    playTrack(nextTrack.id);
+    return;
+  }
+
+  albumEls.playerToggle.textContent = "▶";
 }
 
 function renderAlbumLyrics(track) {
