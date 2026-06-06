@@ -80,7 +80,107 @@
       "year": "2001",
       "date": "2001-01-01",
       "description": "Archives audio de l'année 2001.",
-      "tracks": []
+      "tracks": [
+        {
+          "id": "2001-kula-top-raw-serigne-saliou",
+          "title": "Kula top raw Serigne Saliou",
+          "date": "2001-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2001/03-Kula%20top%20raw%20Serigne%20Saliou.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2001-dou-maass",
+          "title": "Dou maass",
+          "date": "2001-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2001/04-Dou%20maass.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2001-sognaat-gni-deglou",
+          "title": "Sognaat gni déglou",
+          "date": "2001-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2001/05-Sognaat%20gni%20d%C3%A9glou.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2001-lisaanou-choukry",
+          "title": "Lisaanou Choukry",
+          "date": "2001-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2001/06-Lisaanou%20Choukry.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2001-koun",
+          "title": "Koun",
+          "date": "2001-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2001/07-Koun.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2001-borom-ndiouroul",
+          "title": "Borom Ndiouroul",
+          "date": "2001-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2001/08-Borom%20Ndiouroul.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2001-borom-ndiouroul-suite",
+          "title": "Borom Ndiouroul suite",
+          "date": "2001-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2001/09-Borom%20Ndiouroul%20suite.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2001-mbacke-yaaram",
+          "title": "Mbacké yaaram",
+          "date": "2001-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2001/10-Mback%C3%A9%20yaaram.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2001-moteur-tranquille",
+          "title": "Moteur tranquille",
+          "date": "2001-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2001/11-Moteur%20tranquille.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        }
+      ]
     },
     {
       "id": "ibrahima-diagne-2002",
@@ -88,7 +188,74 @@
       "year": "2002",
       "date": "2002-01-01",
       "description": "Archives audio de l'année 2002.",
-      "tracks": []
+      "tracks": [
+        {
+          "id": "2002-magoup-magal",
+          "title": "Magoup MAGAL",
+          "date": "2002-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2002/01-Magoup%20MAGAL.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2002-sang-baa-nga-mahwa",
+          "title": "Sang baa nga Mahwa",
+          "date": "2002-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2002/02-Sang%20baa%20nga%20Mahwa.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2002-mbacke-moy-borom-baa",
+          "title": "Mbacké moy borom baa",
+          "date": "2002-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2002/03-Mback%C3%A9%20moy%20borom%20baa.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2002-borom-mbideff-yi",
+          "title": "Borom Mbideff yi",
+          "date": "2002-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2002/04-Borom%20Mbideff%20yi.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2002-cheikh-saliou",
+          "title": "Cheikh Saliou",
+          "date": "2002-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2002/05-Cheikh%20Saliou.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2002-muride-amal-serigne",
+          "title": "Muride amal Serigne",
+          "date": "2002-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2002/06-Muride%20amal%20Serigne.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        }
+      ]
     },
     {
       "id": "ibrahima-diagne-2003",
@@ -96,7 +263,294 @@
       "year": "2003",
       "date": "2003-01-01",
       "description": "Archives audio de l'année 2003.",
-      "tracks": []
+      "tracks": [
+        {
+          "id": "2003-borom-daarou-rakhman",
+          "title": "Borom Daarou Rakhman",
+          "date": "2003-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2003/01-Borom%20Daarou%20Rakhman.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2003-kima-way-yay-ki",
+          "title": "kima way yay ki",
+          "date": "2003-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2003/01-kima%20way%20yay%20ki.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2003-akhikhatou-rassoulillah",
+          "title": "Akhikhatou Rassoulillah",
+          "date": "2003-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2003/02-Akhikhatou%20Rassoulillah.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2003-nouyo-bi-moy-dieureudieuf",
+          "title": "Nouyo bi moy dieureudieuf",
+          "date": "2003-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2003/02-Nouyo%20bi%20moy%20dieureudieuf.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2003-bu-kene-woute",
+          "title": "Bu kéne wouté",
+          "date": "2003-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2003/03-Bu%20k%C3%A9ne%20wout%C3%A9.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2003-jefeul-serigne-saliou-fa-khelcom",
+          "title": "Jefeul Serigne Saliou fa khelcom",
+          "date": "2003-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2003/03-Jefeul%20Serigne%20Saliou%20fa%20khelcom.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2003-jazaaka-serigne-saliou",
+          "title": "Jazaaka Serigne Saliou",
+          "date": "2003-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2003/04-Jazaaka%20Serigne%20Saliou.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2003-sunu-sangue-ba-gni-ni",
+          "title": "Sunu Sangue ba gni ni",
+          "date": "2003-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2003/04-Sunu%20Sangue%20ba%20gni%20ni.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2003-kilouneme-mattay-kilene-diale",
+          "title": "kilounéme mattay kiléne dialé",
+          "date": "2003-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2003/05-kiloun%C3%A9me%20mattay%20kil%C3%A9ne%20dial%C3%A9.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2003-serigne-saliu-yaa-guene",
+          "title": "Serigne SALIU yaa guene",
+          "date": "2003-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2003/05-Serigne%20SALIU%20yaa%20guene.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2003-borom-jaam-gni",
+          "title": "Borom Jaam gni",
+          "date": "2003-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2003/06-Borom%20Jaam%20gni.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2003-sangue-ba-wett-si-mbaakham",
+          "title": "Sangue-ba wétt si mbaakham",
+          "date": "2003-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2003/06-Sangue-ba%20w%C3%A9tt%20si%20mbaakham.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2003-sounou-sangue-bi",
+          "title": "Sounou sangue bi",
+          "date": "2003-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2003/07-Sounou%20sangue%20bi.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2003-yaajara-way",
+          "title": "Yaajara way",
+          "date": "2003-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2003/07-Yaajara%20way.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2003-cheikh-bethio-ngue",
+          "title": "Cheikh Béthio ngué",
+          "date": "2003-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2003/08-Cheikh%20B%C3%A9thio%20ngu%C3%A9.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2003-mane-zanna",
+          "title": "Mane zanna",
+          "date": "2003-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2003/08-Mane%20zanna.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2003-borom-jamano",
+          "title": "Borom Jamano",
+          "date": "2003-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2003/09-Borom%20Jamano.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2003-cheikh-bethio-bambi-yaye-fath-sunu-aajo",
+          "title": "Cheikh Béthio Bambi yaye fath sunu aajo",
+          "date": "2003-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2003/09-Cheikh%20B%C3%A9thio%20Bambi%20yaye%20fath%20sunu%20aajo.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2003-allahou",
+          "title": "Allahou",
+          "date": "2003-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2003/10-Allahou.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2003-mouqaddamaate",
+          "title": "Mouqaddamaate",
+          "date": "2003-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2003/10-Mouqaddamaate.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2003-mouqaddamaate-suite",
+          "title": "Mouqaddamaate suite",
+          "date": "2003-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2003/11-Mouqaddamaate%20suite.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2003-sangoup-sang-yaa-nge",
+          "title": "Sangoup sang yaa ngé",
+          "date": "2003-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2003/11-Sangoup%20sang%20yaa%20ng%C3%A9.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2003-thiant-la-yalla-wakh",
+          "title": "Thiant la Yalla wakh",
+          "date": "2003-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2003/12-Thiant%20la%20Yalla%20wakh.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2003-serigne-saliu-amoul-morom",
+          "title": "Serigne SALIU amoul morom",
+          "date": "2003-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2003/13-Serigne%20SALIU%20amoul%20morom.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2003-rawnga-thioune",
+          "title": "Rawnga Thioune",
+          "date": "2003-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2003/14-Rawnga%20Thioune.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2003-sa-yag-fi-mo-diara-niane",
+          "title": "Sa yag fi mo diara niane",
+          "date": "2003-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2003/15-Sa%20yag%20fi%20mo%20diara%20niane.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        }
+      ]
     },
     {
       "id": "ibrahima-diagne-2004",
@@ -104,7 +558,173 @@
       "year": "2004",
       "date": "2004-01-01",
       "description": "Archives audio de l'année 2004.",
-      "tracks": []
+      "tracks": [
+        {
+          "id": "2004-borom-daarou-rakhman",
+          "title": "Borom Daarou Rakhman",
+          "date": "2004-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2004/01-Borom%20Daarou%20Rakhman.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2004-akhikhatou-rassoulillah",
+          "title": "Akhikhatou Rassoulillah",
+          "date": "2004-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2004/02-Akhikhatou%20Rassoulillah.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2004-bu-kene-woute",
+          "title": "Bu kéne wouté",
+          "date": "2004-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2004/03-Bu%20k%C3%A9ne%20wout%C3%A9.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2004-sunu-sangue-ba-gni-ni",
+          "title": "Sunu Sangue ba gni ni",
+          "date": "2004-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2004/04-Sunu%20Sangue%20ba%20gni%20ni.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2004-serigne-saliu-yaa-guene",
+          "title": "Serigne SALIU yaa guene",
+          "date": "2004-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2004/05-Serigne%20SALIU%20yaa%20guene.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2004-borom-jaam-gni",
+          "title": "Borom Jaam gni",
+          "date": "2004-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2004/06-Borom%20Jaam%20gni.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2004-yaajara-way",
+          "title": "Yaajara way",
+          "date": "2004-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2004/07-Yaajara%20way.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2004-cheikh-bethio-ngue",
+          "title": "Cheikh Béthio ngué",
+          "date": "2004-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2004/08-Cheikh%20B%C3%A9thio%20ngu%C3%A9.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2004-cheikh-bethio-bambi-yaye-fath-sunu-aajo",
+          "title": "Cheikh Béthio Bambi yaye fath sunu aajo",
+          "date": "2004-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2004/09-Cheikh%20B%C3%A9thio%20Bambi%20yaye%20fath%20sunu%20aajo.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2004-allahou",
+          "title": "Allahou",
+          "date": "2004-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2004/10-Allahou.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2004-sangoup-sang-yaa-nge",
+          "title": "Sangoup sang yaa ngé",
+          "date": "2004-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2004/11-Sangoup%20sang%20yaa%20ng%C3%A9.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2004-thiant-la-yalla-wakh",
+          "title": "Thiant la Yalla wakh",
+          "date": "2004-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2004/12-Thiant%20la%20Yalla%20wakh.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2004-serigne-saliu-amoul-morom",
+          "title": "Serigne SALIU amoul morom",
+          "date": "2004-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2004/13-Serigne%20SALIU%20amoul%20morom.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2004-rawnga-thioune",
+          "title": "Rawnga Thioune",
+          "date": "2004-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2004/14-Rawnga%20Thioune.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2004-sa-yag-fi-mo-diara-niane",
+          "title": "Sa yag fi mo diara niane",
+          "date": "2004-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2004/15-Sa%20yag%20fi%20mo%20diara%20niane.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        }
+      ]
     },
     {
       "id": "ibrahima-diagne-2005",
@@ -112,87 +732,173 @@
       "year": "2005",
       "date": "2005-01-01",
       "description": "Archives audio de l'année 2005.",
-      "tracks": []
-    },
-    {
-      "id": "ibrahima-diagne-2006",
-      "title": "Ibrahima Diagne 2006",
-      "year": "2006",
-      "date": "2006-01-01",
-      "description": "Archives audio de l'année 2006.",
-      "tracks": []
-    },
-    {
-      "id": "ibrahima-diagne-2007",
-      "title": "Ibrahima Diagne 2007",
-      "year": "2007",
-      "date": "2007-01-01",
-      "description": "Archives audio de l'année 2007.",
-      "tracks": []
-    },
-    {
-      "id": "ibrahima-diagne-2008",
-      "title": "Ibrahima Diagne 2008",
-      "year": "2008",
-      "date": "2008-01-01",
-      "description": "Archives audio de l'année 2008.",
-      "tracks": []
-    },
-    {
-      "id": "ibrahima-diagne-2010",
-      "title": "Ibrahima Diagne 2010",
-      "year": "2010",
-      "date": "2010-01-01",
-      "description": "Archives audio de l'année 2010.",
-      "tracks": []
-    },
-    {
-      "id": "ibrahima-diagne-2011",
-      "title": "Ibrahima Diagne 2011",
-      "year": "2011",
-      "date": "2011-01-01",
-      "description": "Archives audio de l'année 2011.",
-      "tracks": []
-    },
-    {
-      "id": "ibrahima-diagne-2012",
-      "title": "Ibrahima Diagne 2012",
-      "year": "2012",
-      "date": "2012-01-01",
-      "description": "Archives audio de l'année 2012.",
-      "tracks": []
-    },
-    {
-      "id": "ibrahima-diagne-2014",
-      "title": "Ibrahima Diagne 2014",
-      "year": "2014",
-      "date": "2014-01-01",
-      "description": "Archives audio de l'année 2014.",
-      "tracks": []
-    },
-    {
-      "id": "ibrahima-diagne-2015",
-      "title": "Ibrahima Diagne 2015",
-      "year": "2015",
-      "date": "2015-01-01",
-      "description": "Archives audio de l'année 2015.",
-      "tracks": []
-    },
-    {
-      "id": "ibrahima-diagne-2016",
-      "title": "Ibrahima Diagne 2016",
-      "year": "2016",
-      "date": "2016-01-01",
-      "description": "Archives audio de l'année 2016.",
-      "tracks": []
-    },
-    {
-      "id": "ibrahima-diagne-2017",
-      "title": "Ibrahima Diagne 2017",
-      "year": "2017",
-      "date": "2017-01-01",
-      "description": "Archives audio de l'année 2017.",
-      "tracks": []
+      "tracks": [
+        {
+          "id": "2005-korite-oumoul-khoura",
+          "title": "Korite Oumoul Khoura",
+          "date": "2005-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2005/01-Korite%20Oumoul%20Khoura.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2005-eskey-serigne-saliou",
+          "title": "Eskey Serigne Saliou",
+          "date": "2005-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2005/02-Eskey%20Serigne%20Saliou.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2005-yalla-bourbeey-cheikh-sal",
+          "title": "Yalla Bourbééy Cheikh Sal",
+          "date": "2005-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2005/03-Yalla%20Bourb%C3%A9%C3%A9y%20Cheikh%20Sal.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2005-ndioukeul-cheikh-bethio",
+          "title": "Ndioukeul Cheikh Béthio",
+          "date": "2005-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2005/04-Ndioukeul%20Cheikh%20B%C3%A9thio.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2005-raboul-khoudrati",
+          "title": "Raboul khoudrati",
+          "date": "2005-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2005/05-Raboul%20khoudrati.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2005-cheikh-sal-dagno-mom",
+          "title": "Cheikh Sal dagno mom",
+          "date": "2005-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2005/06-Cheikh%20Sal%20dagno%20mom.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2005-ya-cheikh-bethio-cheikh",
+          "title": "Ya Cheikh Bethio Cheikh",
+          "date": "2005-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2005/07-Ya%20Cheikh%20Bethio%20Cheikh.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2005-koudoul-mome-dou-wadja",
+          "title": "Koudoul mome dou wadja",
+          "date": "2005-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2005/08-Koudoul%20mome%20dou%20wadja.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2005-borom-khelcom-ya-guen",
+          "title": "Borom Khelcom Ya guen",
+          "date": "2005-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2005/09-Borom%20Khelcom%20Ya%20guen.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2005-cheikh-saliou-cheikh-ahmadou-bamba",
+          "title": "Cheikh Saliou Cheikh Ahmadou Bamba",
+          "date": "2005-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2005/10-Cheikh%20Saliou%20Cheikh%20Ahmadou%20Bamba.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2005-siraatal-mustakhima",
+          "title": "Siraatal Mustakhima",
+          "date": "2005-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2005/11-Siraatal%20Mustakhima.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2005-salamou-aleykoum",
+          "title": "Salamou Aleykoum",
+          "date": "2005-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2005/12-Salamou%20Aleykoum.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2005-sangoup-cheikh-bethio-bakh",
+          "title": "Sangoup Cheikh Béthio Bakh",
+          "date": "2005-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2005/13-Sangoup%20Cheikh%20B%C3%A9thio%20Bakh.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2005-amoul-dindandoo",
+          "title": "Amoul Dindandoo",
+          "date": "2005-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2005/14-Amoul%20Dindandoo.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2005-jamaalane",
+          "title": "Jamaalane",
+          "date": "2005-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2005/15-Jamaalane.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        }
+      ]
     }
   ]
 }

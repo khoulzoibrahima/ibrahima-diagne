@@ -5,7 +5,7 @@ const state = {
   currentTrackId: null
 };
 
-const DATA_VERSION = "20260606-player";
+const DATA_VERSION = "20260606-s3-2005";
 
 const els = {
   featuredRail: document.querySelector("#featuredRail"),
