@@ -4,7 +4,7 @@ const albumState = {
   activeTrackId: null
 };
 
-const DATA_VERSION = "20260605-lyrics-2000";
+const DATA_VERSION = "20260606-rubriques";
 
 const albumEls = {
   title: document.querySelector("#albumTitle"),

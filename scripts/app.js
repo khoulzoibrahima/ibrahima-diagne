@@ -4,7 +4,7 @@ const state = {
   activeTrackId: null
 };
 
-const DATA_VERSION = "20260605-lyrics-2000";
+const DATA_VERSION = "20260606-rubriques";
 
 const els = {
   albumFilter: document.querySelector("#albumFilter"),
@@ -31,8 +31,12 @@ async function init() {
     renderLyrics(activeTrack());
     renderStats();
   } catch (error) {
-    els.albumGrid.innerHTML = `<p class="track">Le catalogue musical est momentanément indisponible.</p>`;
-    els.lyricsPanel.innerHTML = `<h3>Paroles indisponibles</h3><p>Les informations du catalogue ne sont pas accessibles.</p>`;
+    if (els.albumGrid) {
+      els.albumGrid.innerHTML = `<p class="track">Le catalogue musical est momentanément indisponible.</p>`;
+    }
+    if (els.lyricsPanel) {
+      els.lyricsPanel.innerHTML = `<h3>Paroles indisponibles</h3><p>Les informations du catalogue ne sont pas accessibles.</p>`;
+    }
   }
 }
 
@@ -165,6 +169,8 @@ function displayTrackDate(value) {
 }
 
 function renderLyrics(track) {
+  if (!els.lyricsPanel) return;
+
   if (!track) {
     els.lyricsPanel.innerHTML = `<h3>Aucun son sélectionné</h3><p>Choisis un son dans le catalogue.</p>`;
     return;
