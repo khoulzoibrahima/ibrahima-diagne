@@ -899,6 +899,385 @@
           ]
         }
       ]
+    },
+    {
+      "id": "ibrahima-diagne-2006",
+      "title": "Ibrahima Diagne 2006",
+      "year": "2006",
+      "date": "2006-01-01",
+      "description": "Archives audio de l'année 2006.",
+      "tracks": [
+        {
+          "id": "2006-cheikh-saliou-doy-nga-diiney-lislam",
+          "title": "Cheikh Saliou doy nga diiney lislam",
+          "date": "2006-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2006/01-Cheikh%20Saliou%20doy%20nga%20diiney%20lislam.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2006-18-safaray-sant-s-saliu",
+          "title": "18 safaray Sant S Saliu",
+          "date": "2006-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2006/02-18%20safaray%20Sant%20S%20Saliu.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2006-gui-jaamu-yalla-nuneex",
+          "title": "Gui jaamu Yalla nuneex",
+          "date": "2006-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2006/03-Gui%20jaamu%20Yalla%20nuneex.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2006-mbeuguelu-s-saliu-si-ch-bethio",
+          "title": "Mbeuguelu S Saliu si Ch Bethio",
+          "date": "2006-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2006/04-Mbeuguelu%20S%20Saliu%20si%20Ch%20Bethio.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2006-s-saliu-yawlanu-boolel-ya-woor",
+          "title": "S Saliu yawlanu boolel, ya woor",
+          "date": "2006-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2006/05-S%20Saliu%20yawlanu%20boolel%2C%20ya%20woor.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2006-s-saliuwa-guene-kuy-domu-bamba",
+          "title": "S Saliuwa guene kuy domu Bamba",
+          "date": "2006-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2006/06-S%20Saliuwa%20guene%20kuy%20domu%20Bamba.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2006-s-toubay-ch-saliu",
+          "title": "S Toubay Ch Saliu",
+          "date": "2006-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2006/07-S%20Toubay%20Ch%20Saliu.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2006-santako-warnagnu",
+          "title": "Santako warnagnu",
+          "date": "2006-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2006/08-Santako%20warnagnu.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2006-thiouna-jeumfa-ch-saliu",
+          "title": "Thiouna jeumfa Ch Saliu",
+          "date": "2006-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2006/09-Thiouna%20jeumfa%20Ch%20Saliu.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2006-yaram-biy-ramlo-buur-yi",
+          "title": "Yaram biy ramlo buur-yi",
+          "date": "2006-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2006/10-Yaram%20biy%20ramlo%20buur-yi.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2006-yaram-ba-ngui",
+          "title": "Yaram-ba ngui",
+          "date": "2006-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2006/11-Yaram-ba%20ngui.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ibrahima-diagne-2007",
+      "title": "Ibrahima Diagne 2007",
+      "year": "2007",
+      "date": "2007-01-01",
+      "description": "Archives audio de l'année 2007.",
+      "tracks": [
+        {
+          "id": "2007-ch-saliou-amul-dendando",
+          "title": "Ch Saliou amul dendando",
+          "date": "2007-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2007/01-Ch%20Saliou%20amul%20dendando.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2007-cheikh-bethio-du-tuuti",
+          "title": "Cheikh Bethio du tuuti",
+          "date": "2007-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2007/02-Cheikh%20Bethio%20du%20tuuti.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2007-cheikh-saalay-borom-jamano",
+          "title": "Cheikh Saalay borom jamano",
+          "date": "2007-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2007/03-Cheikh%20Saalay%20borom%20jamano.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2007-cheikh-saliou-weetna",
+          "title": "Cheikh Saliou weetna",
+          "date": "2007-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2007/04-Cheikh%20Saliou%20weetna.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2007-keur-samba-laobe",
+          "title": "Keur Samba Laobe",
+          "date": "2007-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2007/05-Keur%20Samba%20Laobe.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2007-ku-namma-guis-yalla",
+          "title": "Ku namma guis Yalla",
+          "date": "2007-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2007/06-Ku%20namma%20guis%20Yalla.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ibrahima-diagne-2008",
+      "title": "Ibrahima Diagne 2008",
+      "year": "2008",
+      "date": "2008-01-01",
+      "description": "Archives audio de l'année 2008.",
+      "tracks": [
+        {
+          "id": "2008-weetal-nagnou",
+          "title": "WEETAL NAGNOU",
+          "date": "2008-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2008/01-WEETAL%20NAGNOU.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2008-cheikh-bi-yaadaane",
+          "title": "CHEIKH bi yaadaane",
+          "date": "2008-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2008/02-CHEIKH%20bi%20yaadaane.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2008-sangua-baagua-touba",
+          "title": "SANGUA BAAGUA TOUBA",
+          "date": "2008-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2008/03-SANGUA%20BAAGUA%20TOUBA.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2008-ligueyame-jeuflu",
+          "title": "Liguèyame jeuflu",
+          "date": "2008-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2008/04-Ligu%C3%A8yame%20jeuflu.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2008-rassulu-laahi",
+          "title": "RASSULU LAAHI",
+          "date": "2008-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2008/05-RASSULU%20LAAHI.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2008-qul-huwa-allahu",
+          "title": "QUL HUWA ALLAHU",
+          "date": "2008-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2008/07-QUL%20HUWA%20ALLAHU.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2008-borom-diamono",
+          "title": "BOROM DIAMONO",
+          "date": "2008-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2008/09-BOROM%20DIAMONO.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2008-si-barkep-serigne-bethio",
+          "title": "Si barkép Serigne BETHIO",
+          "date": "2008-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2008/10-Si%20bark%C3%A9p%20Serigne%20BETHIO.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2008-wayko-nunex",
+          "title": "Wayko nunèx",
+          "date": "2008-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2008/11-Wayko%20nun%C3%A8x.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2008-cheikh-saal-borom-jamano",
+          "title": "Cheikh Saal borom Jamano",
+          "date": "2008-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2008/12-Cheikh%20Saal%20borom%20Jamano.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2008-korite-taiba",
+          "title": "KORITE TAIBA",
+          "date": "2008-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2008/13-KORITE%20TAIBA.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2008-sunu-yoneene-ba",
+          "title": "SUNU YONEENE BA",
+          "date": "2008-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2008/15-SUNU%20YONEENE%20BA.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2008-sant-nanula",
+          "title": "SANT NANULA",
+          "date": "2008-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2008/16-SANT%20NANULA.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2008-tassett",
+          "title": "TASSETT",
+          "date": "2008-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2008/17-TASSETT.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2008-borom-jamono-kenla",
+          "title": "Borom Jamono kenla",
+          "date": "2008-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2008/18-Borom%20Jamono%20kenla.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        }
+      ]
     }
   ]
 }

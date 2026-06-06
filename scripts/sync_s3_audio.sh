@@ -5,6 +5,7 @@ SOURCE_DIR="${1:-/Users/ibrahimakhoule/Downloads/Ibrahima Diagne}"
 BUCKET="${S3_BUCKET:-ibrahima-diagne-bucket}"
 REGION="${AWS_REGION:-us-east-1}"
 AWS_CLI="${AWS_CLI:-aws}"
+MIN_YEAR="${MIN_YEAR:-0}"
 MAX_YEAR="${MAX_YEAR:-9999}"
 
 if ! command -v "$AWS_CLI" >/dev/null 2>&1; then
@@ -27,6 +28,11 @@ find "$SOURCE_DIR" -maxdepth 1 -type d -name "Ibrahima Diagne *" | sort | while 
 
   if ! printf "%s" "$year" | grep -Eq '^[0-9]{4}$'; then
     echo "Année ignorée pour: $album_name" >&2
+    continue
+  fi
+
+  if [ "$year" -lt "$MIN_YEAR" ]; then
+    echo "Année ignorée avant $MIN_YEAR: $album_name"
     continue
   fi
 
