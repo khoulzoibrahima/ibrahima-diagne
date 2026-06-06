@@ -1,205 +1,205 @@
 const state = {
   albums: [],
   s3BaseUrl: "",
-  activeTrackId: null
+  tracks: [],
+  currentTrackId: null
 };
 
-const DATA_VERSION = "20260606-rubriques";
+const DATA_VERSION = "20260606-player";
 
 const els = {
-  albumFilter: document.querySelector("#albumFilter"),
+  featuredRail: document.querySelector("#featuredRail"),
+  albumRail: document.querySelector("#albumRail"),
+  trackList: document.querySelector("#trackList"),
   searchInput: document.querySelector("#searchInput"),
-  albumGrid: document.querySelector("#albumGrid"),
-  lyricsPanel: document.querySelector("#lyricsPanel"),
-  trackCount: document.querySelector("#trackCount"),
-  albumCount: document.querySelector("#albumCount"),
-  sidebarAlbumCount: document.querySelector("#sidebarAlbumCount"),
-  featuredPlay: document.querySelector("[data-featured-audio]"),
-  featuredAudioSlot: document.querySelector("#featuredAudioSlot")
+  searchResults: document.querySelector("#searchResults"),
+  audio: document.querySelector("#globalAudio"),
+  playerCover: document.querySelector("#playerCover"),
+  playerTitle: document.querySelector("#playerTitle"),
+  playerMeta: document.querySelector("#playerMeta"),
+  playerToggle: document.querySelector("#playerToggle")
 };
 
 async function init() {
   try {
-    setupFeaturedAudio();
     const response = await fetch(`data/tracks.json?v=${DATA_VERSION}`);
     const data = await response.json();
-    state.albums = data.albums;
     state.s3BaseUrl = data.s3BaseUrl.replace(/\/$/, "");
-    state.activeTrackId = firstTrack()?.id;
-    populateFilters();
-    renderCatalog();
-    renderLyrics(activeTrack());
-    renderStats();
+    state.albums = data.albums;
+    state.tracks = flattenTracks(data.albums);
+
+    renderFeatured();
+    renderAlbums();
+    renderTracks();
+    renderSearchResults("");
+    setupEvents();
   } catch (error) {
-    if (els.albumGrid) {
-      els.albumGrid.innerHTML = `<p class="track">Le catalogue musical est momentanément indisponible.</p>`;
-    }
-    if (els.lyricsPanel) {
-      els.lyricsPanel.innerHTML = `<h3>Paroles indisponibles</h3><p>Les informations du catalogue ne sont pas accessibles.</p>`;
-    }
+    renderError();
   }
 }
 
-function setupFeaturedAudio() {
-  if (!els.featuredPlay || !els.featuredAudioSlot) return;
-
-  els.featuredPlay.addEventListener("click", () => {
-    els.featuredAudioSlot.innerHTML = `
-      <audio class="featured-audio" controls autoplay preload="metadata" src="${els.featuredPlay.dataset.featuredAudio}"></audio>
-    `;
-    els.featuredPlay.remove();
-    setupAudioAutopause();
-  });
-}
-
-function setupAudioAutopause() {
-  document.querySelectorAll("audio").forEach((audio) => {
-    if (audio.dataset.autopauseReady === "true") return;
-
-    audio.dataset.autopauseReady = "true";
-    audio.addEventListener("play", () => {
-      document.querySelectorAll("audio").forEach((otherAudio) => {
-        if (otherAudio !== audio) otherAudio.pause();
-      });
-    });
-  });
-}
-
-function firstTrack() {
-  return state.albums.flatMap((album) => album.tracks)[0];
-}
-
-function allTracks() {
-  return state.albums.flatMap((album) =>
-    album.tracks.map((track) => ({ ...track, album }))
+function flattenTracks(albums) {
+  return albums.flatMap((album) =>
+    album.tracks.map((track) => ({
+      ...track,
+      albumId: album.id,
+      albumTitle: album.title,
+      albumYear: album.year,
+      albumDescription: album.description
+    }))
   );
 }
 
-function activeTrack() {
-  return allTracks().find((track) => track.id === state.activeTrackId) || allTracks()[0];
+function setupEvents() {
+  document.addEventListener("click", (event) => {
+    const playButton = event.target.closest("[data-play-track]");
+    if (!playButton) return;
+    event.preventDefault();
+    playTrack(playButton.dataset.playTrack);
+  });
+
+  els.playerToggle.addEventListener("click", () => {
+    if (!state.currentTrackId) {
+      const firstTrack = state.tracks[0];
+      if (firstTrack) playTrack(firstTrack.id);
+      return;
+    }
+
+    if (els.audio.paused) {
+      els.audio.play();
+    } else {
+      els.audio.pause();
+    }
+  });
+
+  els.audio.addEventListener("play", () => {
+    els.playerToggle.textContent = "❚❚";
+  });
+
+  els.audio.addEventListener("pause", () => {
+    els.playerToggle.textContent = "▶";
+  });
+
+  els.audio.addEventListener("ended", () => {
+    els.playerToggle.textContent = "▶";
+  });
+
+  els.searchInput.addEventListener("input", () => {
+    renderSearchResults(els.searchInput.value.trim());
+  });
 }
 
-function populateFilters() {
-  const options = [
-    `<option value="all">Tous les albums</option>`,
-    ...state.albums.map((album) => `<option value="${album.id}">${album.title}</option>`)
-  ];
-  els.albumFilter.innerHTML = options.join("");
-  els.albumFilter.addEventListener("change", renderCatalog);
-  els.searchInput.addEventListener("input", renderCatalog);
+function renderFeatured() {
+  const featured = state.tracks.slice(0, 2);
+  els.featuredRail.innerHTML = featured.map(renderFeaturedCard).join("") || renderEmptyState("Aucun son disponible.");
 }
 
-function renderCatalog() {
-  const selectedAlbum = els.albumFilter.value || "all";
-  const query = els.searchInput.value.trim().toLowerCase();
-  const filteredAlbums = state.albums
-    .filter((album) => selectedAlbum === "all" || album.id === selectedAlbum)
-    .map((album) => {
-      const tracks = album.tracks.filter((track) => {
-        const searchable = `${track.title} ${track.date} ${album.title} ${album.year}`.toLowerCase();
-        return searchable.includes(query);
-      });
-      return { ...album, tracks };
-    })
-    .filter((album) => {
-      if (!query) return true;
-      const albumText = `${album.title} ${album.year} ${album.description}`.toLowerCase();
-      return album.tracks.length > 0 || albumText.includes(query);
-    });
-
-  if (!filteredAlbums.length) {
-    els.albumGrid.innerHTML = `<p class="track">Aucun son ne correspond à cette recherche.</p>`;
-    return;
-  }
-
-  els.albumGrid.innerHTML = filteredAlbums.map(renderAlbum).join("");
-}
-
-function renderAlbum(album) {
-  const avatar = albumAvatarStyle(album);
+function renderFeaturedCard(track) {
   return `
-    <a class="album-card" href="album.html?id=${album.id}" aria-label="Ouvrir ${album.title}" style="${avatar}">
-      <div class="album-cover album-avatar">
-        <i class="album-disc" aria-hidden="true"></i>
-        <span>${album.year}</span>
-        <strong>${album.title}</strong>
-        <p>${album.description}</p>
+    <a class="playlist-card" href="album.html?id=${encodeURIComponent(track.albumId)}">
+      <div class="playlist-cover" style="${albumPalette(track.albumYear)}">
+        <strong>${escapeHtml(track.albumYear)}</strong>
       </div>
-      <div>
-        <h3>${album.tracks.length} son${album.tracks.length > 1 ? "s" : ""}</h3>
-        ${renderAlbumPreview(album)}
-      </div>
+      <h3>${escapeHtml(track.title)}</h3>
+      <p>Par Ibrahima Diagne</p>
     </a>
   `;
 }
 
-function albumAvatarStyle(album) {
-  const palettes = [
-    ["#d6b24a", "#9b123a"],
-    ["#1db954", "#1468cf"],
-    ["#dc7f1f", "#8f1235"],
-    ["#7c5cff", "#d6b24a"],
-    ["#00a6a6", "#1d1d1d"],
-    ["#ff4d6d", "#2b2d42"]
-  ];
-  const index = Number(album.year) % palettes.length;
-  const [colorA, colorB] = palettes[index];
-  const tilt = (Number(album.year) % 28) + 118;
-  return `--avatar-a:${colorA};--avatar-b:${colorB};--avatar-tilt:${tilt}deg;`;
+function renderAlbums() {
+  els.albumRail.innerHTML = state.albums.map((album) => `
+    <a class="playlist-card" href="album.html?id=${encodeURIComponent(album.id)}">
+      <div class="playlist-cover" style="${albumPalette(album.year)}">
+        <strong>${escapeHtml(album.year)}</strong>
+      </div>
+      <h3>${escapeHtml(album.title)}</h3>
+      <p>${album.tracks.length ? `${album.tracks.length} son${album.tracks.length > 1 ? "s" : ""}` : "Archives"}</p>
+    </a>
+  `).join("");
 }
 
-function renderAlbumPreview(album) {
-  if (!album.tracks.length) {
-    return `<p class="album-preview">Archives à compléter.</p>`;
-  }
-
-  const preview = album.tracks.slice(0, 3).map((track) => `<li>${track.title}</li>`).join("");
-  const remaining = album.tracks.length > 3 ? `<li>+ ${album.tracks.length - 3} autre${album.tracks.length - 3 > 1 ? "s" : ""} son${album.tracks.length - 3 > 1 ? "s" : ""}</li>` : "";
-  return `
-    <ul class="album-preview-list">
-      ${preview}
-      ${remaining}
-    </ul>
-  `;
+function renderTracks() {
+  els.trackList.innerHTML = state.tracks.slice(0, 8).map(renderTrackRow).join("") || renderEmptyState("Aucun son disponible.");
 }
 
-function displayTrackDate(value) {
-  if (!value || value.endsWith("-01-01")) return "";
-  return formatDate(value);
-}
-
-function renderLyrics(track) {
-  if (!els.lyricsPanel) return;
-
-  if (!track) {
-    els.lyricsPanel.innerHTML = `<h3>Aucun son sélectionné</h3><p>Choisis un son dans le catalogue.</p>`;
+function renderSearchResults(query) {
+  if (!query) {
+    els.searchResults.innerHTML = "";
     return;
   }
 
-  els.lyricsPanel.innerHTML = `
-    <p class="eyebrow">${[track.album.title, displayTrackDate(track.date)].filter(Boolean).join(" • ")}</p>
-    <h3>${track.title}</h3>
-    <p>${[track.duration, "écoute en ligne", "achat indisponible"].filter(Boolean).join(" • ")}</p>
-    <div class="lyrics-lines">
-      ${track.lyrics.map((line) => `<span>${line}</span>`).join("")}
-    </div>
+  const normalizedQuery = query.toLowerCase();
+  const results = state.tracks.filter((track) => {
+    const searchable = `${track.title} ${track.albumTitle} ${track.albumYear}`.toLowerCase();
+    return searchable.includes(normalizedQuery);
+  });
+
+  els.searchResults.innerHTML = results.map(renderTrackRow).join("") || renderEmptyState("Aucun résultat trouvé.");
+}
+
+function renderTrackRow(track) {
+  return `
+    <a class="track-row" href="album.html?id=${encodeURIComponent(track.albumId)}">
+      <span class="track-thumb" style="${albumPalette(track.albumYear)}"></span>
+      <span class="track-title">
+        <h3>${escapeHtml(track.title)}</h3>
+        <p>${escapeHtml(track.albumTitle)}</p>
+      </span>
+      <button class="play-mini" data-play-track="${escapeHtml(track.id)}" type="button" aria-label="Écouter ${escapeHtml(track.title)}">▶</button>
+    </a>
   `;
 }
 
-function renderStats() {
-  els.albumCount.textContent = state.albums.length;
-  els.trackCount.textContent = allTracks().length;
-  if (els.sidebarAlbumCount) {
-    els.sidebarAlbumCount.textContent = `${state.albums.length} albums`;
+function playTrack(trackId) {
+  const track = state.tracks.find((item) => item.id === trackId);
+  if (!track) return;
+
+  const src = `${state.s3BaseUrl}/${track.audio}`;
+  state.currentTrackId = track.id;
+  els.playerTitle.textContent = track.title;
+  els.playerMeta.textContent = track.albumTitle;
+  els.playerCover.setAttribute("style", albumPalette(track.albumYear));
+
+  if (els.audio.src !== src) {
+    els.audio.src = src;
   }
+
+  els.audio.play().catch(() => {
+    els.playerMeta.textContent = "Lecture indisponible pour le moment";
+  });
 }
 
-function formatDate(value) {
-  return new Intl.DateTimeFormat("fr-FR", {
-    year: "numeric",
-    month: "long",
-    day: "numeric"
-  }).format(new Date(`${value}T12:00:00`));
+function renderError() {
+  const message = renderEmptyState("Le catalogue musical est momentanément indisponible.");
+  els.featuredRail.innerHTML = message;
+  els.albumRail.innerHTML = message;
+  els.trackList.innerHTML = message;
+}
+
+function renderEmptyState(message) {
+  return `<p class="empty-state">${escapeHtml(message)}</p>`;
+}
+
+function albumPalette(year) {
+  const palettes = [
+    ["#d8ad44", "#3b2607"],
+    ["#191c1c", "#d8ad44"],
+    ["#0d4d61", "#191c1c"],
+    ["#86203a", "#2c1017"],
+    ["#7c6b44", "#191c1c"],
+    ["#a41432", "#191c1c"]
+  ];
+  const [a, b] = palettes[Number(year) % palettes.length];
+  return `--a:${a};--b:${b};`;
+}
+
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
 }
 
 init();

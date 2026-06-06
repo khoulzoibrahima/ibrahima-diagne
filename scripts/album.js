@@ -1,17 +1,22 @@
 const albumState = {
   album: null,
   s3BaseUrl: "",
-  activeTrackId: null
+  currentTrackId: null
 };
 
-const DATA_VERSION = "20260606-rubriques";
+const DATA_VERSION = "20260606-player";
 
 const albumEls = {
   title: document.querySelector("#albumTitle"),
   description: document.querySelector("#albumDescription"),
   trackCount: document.querySelector("#albumTrackCount"),
   tracks: document.querySelector("#albumTracks"),
-  lyricsPanel: document.querySelector("#albumLyricsPanel")
+  lyricsPanel: document.querySelector("#albumLyricsPanel"),
+  audio: document.querySelector("#globalAudio"),
+  playerCover: document.querySelector("#playerCover"),
+  playerTitle: document.querySelector("#playerTitle"),
+  playerMeta: document.querySelector("#playerMeta"),
+  playerToggle: document.querySelector("#playerToggle")
 };
 
 async function initAlbumPage() {
@@ -21,118 +26,159 @@ async function initAlbumPage() {
     const data = await response.json();
     albumState.s3BaseUrl = data.s3BaseUrl.replace(/\/$/, "");
     albumState.album = data.albums.find((album) => album.id === albumId) || data.albums[0];
-    albumState.activeTrackId = albumState.album.tracks[0]?.id || null;
     renderAlbumPage();
+    setupAlbumEvents();
   } catch (error) {
-    albumEls.title.textContent = "Album indisponible";
-    albumEls.description.textContent = "Les informations de cet album ne sont pas accessibles.";
-    albumEls.tracks.innerHTML = `<article class="track empty-track"><h3>Catalogue indisponible</h3></article>`;
+    renderAlbumError();
   }
+}
+
+function setupAlbumEvents() {
+  document.addEventListener("click", (event) => {
+    const playButton = event.target.closest("[data-play-track]");
+    if (playButton) {
+      event.preventDefault();
+      playTrack(playButton.dataset.playTrack);
+      return;
+    }
+
+    const lyricsButton = event.target.closest("[data-show-lyrics]");
+    if (lyricsButton) {
+      event.preventDefault();
+      renderAlbumLyrics(findTrack(lyricsButton.dataset.showLyrics));
+      albumEls.lyricsPanel.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  });
+
+  albumEls.playerToggle.addEventListener("click", () => {
+    if (!albumState.currentTrackId) {
+      const firstTrack = albumState.album?.tracks[0];
+      if (firstTrack) playTrack(firstTrack.id);
+      return;
+    }
+
+    if (albumEls.audio.paused) {
+      albumEls.audio.play();
+    } else {
+      albumEls.audio.pause();
+    }
+  });
+
+  albumEls.audio.addEventListener("play", () => {
+    albumEls.playerToggle.textContent = "❚❚";
+  });
+
+  albumEls.audio.addEventListener("pause", () => {
+    albumEls.playerToggle.textContent = "▶";
+  });
+
+  albumEls.audio.addEventListener("ended", () => {
+    albumEls.playerToggle.textContent = "▶";
+  });
 }
 
 function renderAlbumPage() {
   const album = albumState.album;
   document.title = `${album.title} | Ibrahima Diagne`;
   albumEls.title.textContent = album.title;
-  const sidebarTitle = document.querySelector("#sidebarAlbumTitle");
-  if (sidebarTitle) sidebarTitle.textContent = album.title;
   albumEls.description.textContent = album.description;
   albumEls.trackCount.textContent = `${album.tracks.length} son${album.tracks.length > 1 ? "s" : ""} dans l'album`;
 
   if (!album.tracks.length) {
-    albumEls.tracks.innerHTML = renderEmptyAlbum();
+    albumEls.tracks.innerHTML = renderEmptyState("Les sons de cet album seront ajoutés après vérification des fichiers audio.");
     renderAlbumLyrics(null);
     return;
   }
 
   albumEls.tracks.innerHTML = album.tracks.map(renderAlbumTrack).join("");
-  document.querySelectorAll("[data-album-lyrics-id]").forEach((button) => {
-    button.addEventListener("click", () => {
-      albumState.activeTrackId = button.dataset.albumLyricsId;
-      renderAlbumLyrics(activeAlbumTrack());
-      document.querySelector("#albumLyricsPanel").scrollIntoView({ behavior: "smooth", block: "start" });
-    });
-  });
-  setupAlbumAudioAutopause();
-  renderAlbumLyrics(activeAlbumTrack());
+  renderAlbumLyrics(album.tracks[0]);
 }
 
 function renderAlbumTrack(track) {
+  return `
+    <article class="track-row album-track-row">
+      <span class="track-thumb" style="${albumPalette(albumState.album.year)}"></span>
+      <span class="track-title">
+        <h3>${escapeHtml(track.title)}</h3>
+        <p>${escapeHtml(albumState.album.title)}</p>
+      </span>
+      <span class="album-actions">
+        <button class="play-mini" data-play-track="${escapeHtml(track.id)}" type="button" aria-label="Écouter ${escapeHtml(track.title)}">▶</button>
+        <button class="lyrics-button" data-show-lyrics="${escapeHtml(track.id)}" type="button">Paroles</button>
+      </span>
+    </article>
+  `;
+}
+
+function playTrack(trackId) {
+  const track = findTrack(trackId);
+  if (!track) return;
+
   const src = `${albumState.s3BaseUrl}/${track.audio}`;
-  const meta = [albumState.album.title, displayAlbumTrackDate(track.date), track.duration].filter(Boolean).join(" • ");
-  return `
-    <article class="track">
-      <div class="track-top">
-        <div>
-          <h3>${track.title}</h3>
-          <div class="track-meta">${meta}</div>
-        </div>
-      </div>
-      <audio controls preload="none" src="${src}"></audio>
-      <div class="track-actions">
-        <button class="small-button" data-album-lyrics-id="${track.id}" type="button">Voir paroles</button>
-        <button class="small-button disabled" type="button" disabled>Wave indisponible</button>
-        <button class="small-button disabled" type="button" disabled>Orange Money indisponible</button>
-      </div>
-    </article>
-  `;
-}
+  albumState.currentTrackId = track.id;
+  albumEls.playerTitle.textContent = track.title;
+  albumEls.playerMeta.textContent = albumState.album.title;
+  albumEls.playerCover.setAttribute("style", albumPalette(albumState.album.year));
+  renderAlbumLyrics(track);
 
-function renderEmptyAlbum() {
-  return `
-    <article class="track empty-track">
-      <div>
-        <h3>Archives à compléter</h3>
-        <div class="track-meta">Les sons de cet album seront ajoutés après vérification des fichiers audio.</div>
-      </div>
-    </article>
-  `;
-}
+  if (albumEls.audio.src !== src) {
+    albumEls.audio.src = src;
+  }
 
-function activeAlbumTrack() {
-  return albumState.album.tracks.find((track) => track.id === albumState.activeTrackId) || albumState.album.tracks[0];
+  albumEls.audio.play().catch(() => {
+    albumEls.playerMeta.textContent = "Lecture indisponible pour le moment";
+  });
 }
 
 function renderAlbumLyrics(track) {
   if (!track) {
-    albumEls.lyricsPanel.innerHTML = `<h3>Aucun son sélectionné</h3><p>Les paroles apparaîtront dès qu'un son sera disponible dans cet album.</p>`;
+    albumEls.lyricsPanel.innerHTML = `<p>Les paroles apparaîtront dès qu'un son sera disponible dans cet album.</p>`;
     return;
   }
 
   albumEls.lyricsPanel.innerHTML = `
-    <p class="eyebrow">${[albumState.album.title, displayAlbumTrackDate(track.date)].filter(Boolean).join(" • ")}</p>
-    <h3>${track.title}</h3>
-    <p>${[track.duration, "écoute en ligne", "achat indisponible"].filter(Boolean).join(" • ")}</p>
+    <h3>${escapeHtml(track.title)}</h3>
+    <p>${escapeHtml(albumState.album.title)}</p>
     <div class="lyrics-lines">
-      ${track.lyrics.map((line) => `<span>${line}</span>`).join("")}
+      ${track.lyrics.map((line) => `<span>${escapeHtml(line)}</span>`).join("")}
     </div>
   `;
 }
 
-function setupAlbumAudioAutopause() {
-  document.querySelectorAll("audio").forEach((audio) => {
-    if (audio.dataset.autopauseReady === "true") return;
-
-    audio.dataset.autopauseReady = "true";
-    audio.addEventListener("play", () => {
-      document.querySelectorAll("audio").forEach((otherAudio) => {
-        if (otherAudio !== audio) otherAudio.pause();
-      });
-    });
-  });
+function renderAlbumError() {
+  albumEls.title.textContent = "Album indisponible";
+  albumEls.description.textContent = "Les informations de cet album ne sont pas accessibles.";
+  albumEls.tracks.innerHTML = renderEmptyState("Catalogue indisponible.");
 }
 
-function displayAlbumTrackDate(value) {
-  if (!value || value.endsWith("-01-01")) return "";
-  return formatAlbumDate(value);
+function findTrack(trackId) {
+  return albumState.album?.tracks.find((track) => track.id === trackId);
 }
 
-function formatAlbumDate(value) {
-  return new Intl.DateTimeFormat("fr-FR", {
-    year: "numeric",
-    month: "long",
-    day: "numeric"
-  }).format(new Date(`${value}T12:00:00`));
+function renderEmptyState(message) {
+  return `<p class="empty-state">${escapeHtml(message)}</p>`;
+}
+
+function albumPalette(year) {
+  const palettes = [
+    ["#d8ad44", "#3b2607"],
+    ["#191c1c", "#d8ad44"],
+    ["#0d4d61", "#191c1c"],
+    ["#86203a", "#2c1017"],
+    ["#7c6b44", "#191c1c"],
+    ["#a41432", "#191c1c"]
+  ];
+  const [a, b] = palettes[Number(year) % palettes.length];
+  return `--a:${a};--b:${b};`;
+}
+
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
 }
 
 initAlbumPage();

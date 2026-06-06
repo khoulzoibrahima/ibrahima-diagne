@@ -4,294 +4,175 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ibrahima Diagne | Chanteur religieux thiantacone</title>
+  <title>Ibrahima Diagne | Archives thiantacones</title>
   <meta name="description"
-    content="Site officiel d'Ibrahima Diagne, chanteur religieux thiantacone de Serigne Béthio. Albums, sons classés par date, paroles et actualités.">
-  <link rel="stylesheet" href="styles.css?v=20260606-rubriques">
+    content="Archives musicales d'Ibrahima Diagne : albums classés par année, thiants, Magals, médiathèque et directs.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20260606-player">
 </head>
 
 <body>
-  <div class="app-shell">
-    <aside class="sidebar" aria-label="Navigation musicale">
-      <a class="brand" href="#accueil" aria-label="Accueil Ibrahima Diagne">
-        <span class="brand-mark">ID</span>
-        <span>Ibrahima Diagne</span>
-      </a>
-      <nav class="nav" aria-label="Navigation principale">
-        <a href="#accueil">Accueil</a>
-        <a href="#albums">Bibliothèque</a>
-        <a href="#espaces">Espaces</a>
-        <a href="#direct">Live + Direct</a>
-        <a href="#biographie">Biographie</a>
-      </nav>
-      <div class="sidebar-card">
-        <span>Archive</span>
-        <strong id="sidebarAlbumCount">17 albums</strong>
-        <small>Chants thiantacones classés par année</small>
-      </div>
-    </aside>
-
-    <div class="app-main">
-      <header class="topbar">
-        <a class="brand mobile-brand" href="#accueil" aria-label="Accueil Ibrahima Diagne">
-          <span class="brand-mark">ID</span>
-          <span>Ibrahima Diagne</span>
+  <div class="app">
+    <div class="layout">
+      <aside class="side-nav" aria-label="Navigation principale">
+        <a class="side-brand" href="#accueil" aria-label="Accueil Ibrahima Diagne">
+          <span class="side-mark">ID</span>
+          <span>Ibrahima<br>Diagne</span>
         </a>
-        <div class="topbar-actions">
-          <a href="#albums">Albums</a>
-          <a href="#espaces">Espaces</a>
-          <a href="#direct">Direct</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </header>
+        <nav class="main-nav">
+          <a href="#accueil">Accueil</a>
+          <a href="#albums">Ma musique</a>
+          <a href="#mediatheque">Médiathèque</a>
+          <a href="#direct">Live + Direct</a>
+          <a href="#rechercher">Rechercher</a>
+        </nav>
+        <p class="nav-footer">Archives thiantacones<br>Albums, thiants et Magals</p>
+      </aside>
 
-      <main>
-    <section id="accueil" class="hero">
-      <div class="hero-media">
-        <img class="hero-image" src="assets/images/serigne-bethio-thioune.jpg" alt="Serigne Béthio Thioune">
-        <div class="hero-card">
-          <span>Son en vedette</span>
-          <strong>Sant Serigne Saliou 99</strong>
-          <button class="featured-play" type="button" data-featured-audio="https://ibrahima-diagne-bucket.s3.us-east-1.amazonaws.com/ibrahima-diagne-1999/Sant+Serigne+Saliou99.mp3">Écouter le son vedette</button>
-          <div id="featuredAudioSlot"></div>
-          <small>Album Ibrahima Diagne 1999</small>
-        </div>
-      </div>
-      <div class="hero-copy">
-        <div class="status-pill">Archives musicales thiantacones</div>
-        <p class="eyebrow">Chants religieux thiantacone</p>
-        <h1>Ibrahima Diagne, la voix dédiée à Serigne Béthio</h1>
-        <p class="lead">Un espace dédié aux chants religieux, aux albums classés par date et à la mémoire
-          musicale d'Ibrahima Diagne.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="#albums">Écouter les sons</a>
-          <a class="button ghost" href="#biographie">Découvrir l'artiste</a>
-        </div>
-        <div class="trust-row" aria-label="Informations principales">
-          <span>Albums classés</span>
-          <span>Écoute en ligne</span>
-          <span>Thiants</span>
-          <span>Magals</span>
-        </div>
-      </div>
-    </section>
+      <main class="content">
+        <header id="accueil" class="brand-area">
+          <div class="brand-logo">ID</div>
+          <p class="page-kicker">Archives thiantacones en streaming</p>
+          <h1>Ibrahima Diagne - Archives thiantacones</h1>
+        </header>
 
-    <section class="intro-band">
-      <div>
-        <p class="eyebrow">Présentation</p>
-        <h2>Un espace officiel pour écouter et conserver les chants.</h2>
-      </div>
-      <p>Le site rassemble les albums, les sons, les rubriques et les espaces live dans une présentation claire, respectueuse et accessible
-        à la communauté thiantacone.</p>
-    </section>
+        <div class="home-grid">
+          <div>
+            <section class="section">
+              <div class="section-title">
+                <h2>C'est en vedette 🔥</h2>
+              </div>
+              <div id="featuredRail" class="horizontal" aria-live="polite"></div>
+            </section>
 
-    <section class="feature-row" aria-label="Points forts du site">
-      <article>
-        <span>01</span>
-        <strong>Catalogue audio</strong>
-        <p>Les chants sont organisés par album, avec une écoute simple et directe.</p>
-      </article>
-      <article>
-        <span>02</span>
-        <strong>Classement clair</strong>
-        <p>Albums, dates, recherche et rubriques regroupés au même endroit.</p>
-      </article>
-      <article>
-        <span>03</span>
-        <strong>Espaces religieux</strong>
-        <p>Thiants, Magals, Khassaïdes, lives et grandes journées réunis dans des rubriques dédiées.</p>
-      </article>
-    </section>
-
-    <section id="espaces" class="section spaces-section">
-      <div class="section-heading">
-        <p class="eyebrow">Espaces</p>
-        <h2>Rubriques principales</h2>
-        <p>Un portail complet autour du parcours d'Ibrahima Diagne, des thiants, des Magals, des médias et des grands moments mourides.</p>
-      </div>
-
-      <div class="spaces-grid">
-        <article class="space-card focus-card">
-          <span>Focus</span>
-          <h3>Biographie Focus</h3>
-          <p>Parcours de Serigne Ibrahima Diagne, chanteur religieux thiantacone, avec repères, sources de presse et archives de référence.</p>
-          <a class="small-button" href="#biographie">Voir le parcours</a>
-        </article>
-        <article class="space-card">
-          <span>Thiant</span>
-          <h3>Thiants</h3>
-          <p>Archives, chants, événements et sélections autour des thiants, classés pour une consultation simple.</p>
-        </article>
-        <article class="space-card">
-          <span>Magal</span>
-          <h3>Magals</h3>
-          <p>Rubrique dédiée aux chants, annonces, contenus et archives liés aux Magals.</p>
-        </article>
-        <article class="space-card media-card">
-          <span>Médiathèque</span>
-          <h3>Espace Médiathèque</h3>
-          <p>Accès vers les plateformes officielles et regroupement des contenus vidéo et sociaux.</p>
-          <div class="social-links" aria-label="Liens médias">
-            <a href="https://www.youtube.com/results?search_query=Ibrahima+Diagne+Thiantacone" target="_blank" rel="noreferrer">YouTube</a>
-            <a href="https://www.facebook.com/search/top?q=Ibrahima%20Diagne%20Thiantacone" target="_blank" rel="noreferrer">Facebook</a>
-            <a href="https://www.tiktok.com/search?q=Ibrahima%20Diagne%20Thiantacone" target="_blank" rel="noreferrer">TikTok</a>
+            <section id="albums" class="section">
+              <div class="section-title with-link">
+                <div>
+                  <h2>Albums</h2>
+                  <p>Classés par année</p>
+                </div>
+                <a href="album.html?id=ibrahima-diagne-2000">Voir album 2000</a>
+              </div>
+              <div id="albumRail" class="horizontal" aria-live="polite"></div>
+            </section>
           </div>
-        </article>
-      </div>
 
-      <div class="rubrique-strip" aria-label="Sous-rubriques médiathèque">
-        <a href="#khassada">Rubrique Khassaïdes</a>
-        <a href="#magal">Rubrique Magal</a>
-        <a href="#gamou">Rubrique Gamou</a>
-      </div>
-    </section>
+          <div>
+            <section id="mediatheque" class="section">
+              <div class="section-title">
+                <h2>Médiathèque</h2>
+              </div>
+              <div class="media-grid">
+                <a class="media-link" href="https://www.youtube.com/results?search_query=Ibrahima+Diagne+Thiantacone"
+                  target="_blank" rel="noreferrer">YouTube</a>
+                <a class="media-link" href="https://www.facebook.com/search/top?q=Ibrahima%20Diagne%20Thiantacone"
+                  target="_blank" rel="noreferrer">Facebook</a>
+                <a class="media-link" href="https://www.tiktok.com/search?q=Ibrahima%20Diagne%20Thiantacone"
+                  target="_blank" rel="noreferrer">TikTok</a>
+              </div>
+            </section>
 
-    <section id="khassada" class="section editorial-section">
-      <div class="section-heading">
-        <p class="eyebrow">Médiathèque</p>
-        <h2>Khassaïdes, Magal et Gamou</h2>
-        <p>Trois rubriques pour organiser les contenus spirituels, les archives de lecture, les chants et les grands rendez-vous.</p>
-      </div>
-      <div class="editorial-grid">
-        <article>
-          <span>Khassaïdes</span>
-          <h3>Journée Khassaïdes Touba</h3>
-          <p>Contenus autour des khassaïdes, lectures, journées dédiées et archives à enrichir progressivement.</p>
-        </article>
-        <article id="magal">
-          <span>Magal</span>
-          <h3>Rubrique Magal</h3>
-          <p>Sélections audio, vidéos, repères et contenus spéciaux autour du Grand Magal et des Magals.</p>
-        </article>
-        <article id="gamou">
-          <span>Gamou</span>
-          <h3>Rubrique Gamou</h3>
-          <p>Espace pour les programmes, directs, chants et archives associés aux Gamous.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="direct" class="section live-section">
-      <div class="section-heading">
-        <p class="eyebrow">Live + Direct</p>
-        <h2>Suivre les grands lieux en direct</h2>
-        <p>Un espace prêt à accueillir les directs officiels, les liens de diffusion et les temps forts des grandes mosquées.</p>
-      </div>
-      <div class="live-grid">
-        <article>
-          <span class="live-dot"></span>
-          <h3>Grande Mosquée de Touba</h3>
-          <p>Direct officiel, prières, événements et temps forts depuis Touba.</p>
-          <button class="small-button disabled" type="button">Lien à venir</button>
-        </article>
-        <article>
-          <span class="live-dot"></span>
-          <h3>Mosquée Massalikoul Djinane</h3>
-          <p>Diffusions, cérémonies et grands rendez-vous religieux depuis Dakar.</p>
-          <button class="small-button disabled" type="button">Lien à venir</button>
-        </article>
-        <article>
-          <span class="live-dot"></span>
-          <h3>Mosquée Médinatoul Salam</h3>
-          <p>Lives, thiants et programmes associés à Médinatoul Salam.</p>
-          <button class="small-button disabled" type="button">Lien à venir</button>
-        </article>
-        <article>
-          <span class="live-dot"></span>
-          <h3>Mosquée Janatou Makhwa</h3>
-          <p>Directs et contenus dédiés aux rassemblements et moments religieux.</p>
-          <button class="small-button disabled" type="button">Lien à venir</button>
-        </article>
-      </div>
-    </section>
-
-    <section id="keurs" class="section world-section">
-      <div class="world-panel">
-        <div>
-          <p class="eyebrow">Communauté</p>
-          <h2>Keurs Serigne Touba à travers le monde</h2>
-          <p>Un espace dédié aux maisons, dahiras, journées et rassemblements autour de Serigne Touba dans le monde.</p>
+            <section id="direct" class="section">
+              <div class="section-title">
+                <h2>Live + Direct</h2>
+              </div>
+              <div class="event-grid">
+                <article class="event-card">
+                  <h3><span class="live-dot"></span>Touba</h3>
+                  <p>Grande Mosquée</p>
+                </article>
+                <article class="event-card">
+                  <h3><span class="live-dot"></span>Massalikoul</h3>
+                  <p>Dakar</p>
+                </article>
+                <article class="event-card">
+                  <h3>Médinatoul Salam</h3>
+                  <p>Thiants et directs</p>
+                </article>
+                <article class="event-card">
+                  <h3>Janatou Makhwa</h3>
+                  <p>Programmes</p>
+                </article>
+              </div>
+            </section>
+          </div>
         </div>
-        <div class="world-list">
-          <article>
-            <strong>Journée Khassaïdes Touba</strong>
-            <span>Lectures, programmes et archives de la journée.</span>
-          </article>
-          <article>
-            <strong>Bamba Day USA</strong>
-            <span>Temps forts, médias et contenus de la communauté aux États-Unis.</span>
-          </article>
-          <article>
-            <strong>Keurs et dahiras</strong>
-            <span>Présentation progressive des espaces mourides par pays et par ville.</span>
-          </article>
-        </div>
-      </div>
-    </section>
 
-    <section id="albums" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Catalogue</p>
-        <h2>Albums et sons classés par date</h2>
-        <p>Filtrer par album, retrouver un titre et ouvrir la page détaillée de chaque archive.</p>
-      </div>
+        <section class="section">
+          <div class="section-title">
+            <h2>Sorties tendances 🇸🇳</h2>
+          </div>
+          <div id="trackList" class="track-list" aria-live="polite"></div>
+        </section>
 
-      <div class="catalog-toolbar">
-        <label>
-          Album
-          <select id="albumFilter"></select>
-        </label>
-        <label>
-          Recherche
-          <input id="searchInput" type="search" placeholder="Titre, album, année...">
-        </label>
-      </div>
+        <section id="rechercher" class="section search-section">
+          <div class="section-title">
+            <h2>Rechercher</h2>
+            <p>Retrouver un son, un album ou une année.</p>
+          </div>
+          <label class="search-box">
+            <span>Recherche</span>
+            <input id="searchInput" type="search" placeholder="Titre, album, année...">
+          </label>
+          <div id="searchResults" class="track-list compact-list" aria-live="polite"></div>
+        </section>
 
-      <div id="albumGrid" class="album-grid" aria-live="polite"></div>
-    </section>
+        <section id="espaces" class="section">
+          <div class="section-title">
+            <h2>Espaces</h2>
+          </div>
+          <div class="event-grid large-events">
+            <article class="event-card">
+              <h3>Biographie Focus</h3>
+              <p>Parcours de Serigne Ibrahima Diagne et sources de presse.</p>
+            </article>
+            <article class="event-card">
+              <h3>Thiants</h3>
+              <p>Archives et sélections autour des thiants.</p>
+            </article>
+            <article class="event-card">
+              <h3>Magals</h3>
+              <p>Contenus et chants associés aux grands Magals.</p>
+            </article>
+            <article class="event-card">
+              <h3>Keurs Serigne Touba</h3>
+              <p>Journée Khassaïdes Touba, Bamba Day USA et diaspora.</p>
+            </article>
+          </div>
+        </section>
 
-    <section id="biographie" class="bio">
-      <div class="bio-card">
-        <p class="eyebrow">Biographie</p>
-        <h2>Une voix au service du thiant</h2>
-        <p>Ibrahima Diagne est présenté ici comme chanteur religieux thiantacone, attaché à la transmission, au respect
-          et à la mémoire des chants dédiés à Serigne Béthio.</p>
-        <p>Une archive de presse relayée par AllAfrica permet de replacer son parcours dans la mémoire culturelle et
-          religieuse sénégalaise. Cette source complète la présentation du catalogue musical et des archives
-          thiantacones.</p>
-        <a class="source-link" href="https://fr.allafrica.com/stories/200802270470.html"
-          target="_blank" rel="noreferrer">Lire l'article source sur AllAfrica</a>
-      </div>
-      <div class="stats">
-        <div><strong id="trackCount">0</strong><span>Sons disponibles</span></div>
-        <div><strong id="albumCount">0</strong><span>Albums</span></div>
-        <div><strong>26</strong><span>Albums cités dans la presse</span></div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact">
-      <div>
-        <p class="eyebrow">Contact</p>
-        <h2>Pour booking, archives ou gestion du catalogue</h2>
-        <p>Pour les demandes de booking, les archives audio, les médias officiels ou les informations de distribution.
-        </p>
-      </div>
-      <form class="contact-form">
-        <label>Nom<input type="text" placeholder="Votre nom"></label>
-        <label>Message<textarea placeholder="Votre message"></textarea></label>
-        <button class="button primary" type="button">Envoyer la demande</button>
-      </form>
-    </section>
+        <section id="biographie" class="section bio-section">
+          <div class="section-title">
+            <h2>Biographie Focus</h2>
+          </div>
+          <div class="bio-panel">
+            <p>Ibrahima Diagne est présenté ici comme chanteur religieux thiantacone, attaché à la transmission, au
+              respect et à la mémoire des chants dédiés à Serigne Béthio.</p>
+            <p>Une archive de presse relayée par AllAfrica permet de replacer son parcours dans la mémoire culturelle et
+              religieuse sénégalaise.</p>
+            <a href="https://fr.allafrica.com/stories/200802270470.html" target="_blank" rel="noreferrer">Lire
+              l'article source</a>
+          </div>
+        </section>
       </main>
-
-      <footer class="footer">
-        <span>&copy; 2026 Ibrahima Diagne</span>
-        <span>Archives musicales, thiants, Magals et espaces communautaires.</span>
-      </footer>
     </div>
+
+    <footer class="bottom-player" aria-label="Lecteur audio">
+      <div class="player-inner">
+        <span id="playerCover" class="player-cover"></span>
+        <span class="player-text">
+          <h3 id="playerTitle">Aucun son lancé</h3>
+          <p id="playerMeta">Choisir un son dans la liste</p>
+        </span>
+        <button id="playerToggle" class="play-mini" type="button" aria-label="Lecture">▶</button>
+      </div>
+      <audio id="globalAudio" preload="none"></audio>
+    </footer>
   </div>
 
-  <script src="scripts/app.js?v=20260606-rubriques"></script>
+  <script src="scripts/app.js?v=20260606-player"></script>
 </body>
 
 </html>

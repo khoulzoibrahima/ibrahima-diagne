@@ -1,76 +1,74 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Album | Ibrahima Diagne</title>
-    <meta name="description" content="Page album des archives musicales d'Ibrahima Diagne.">
-    <link rel="stylesheet" href="styles.css?v=20260606-rubriques">
-  </head>
-  <body>
-    <div class="app-shell">
-      <aside class="sidebar" aria-label="Navigation musicale">
-        <a class="brand" href="index.html#accueil" aria-label="Accueil Ibrahima Diagne">
-          <span class="brand-mark">ID</span>
-          <span>Ibrahima Diagne</span>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Album | Ibrahima Diagne</title>
+  <meta name="description" content="Page album des archives musicales d'Ibrahima Diagne.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20260606-player">
+</head>
+
+<body>
+  <div class="app">
+    <div class="layout">
+      <aside class="side-nav" aria-label="Navigation principale">
+        <a class="side-brand" href="index.html#accueil" aria-label="Accueil Ibrahima Diagne">
+          <span class="side-mark">ID</span>
+          <span>Ibrahima<br>Diagne</span>
         </a>
-        <nav class="nav" aria-label="Navigation principale">
+        <nav class="main-nav">
           <a href="index.html#accueil">Accueil</a>
-          <a href="index.html#albums">Bibliothèque</a>
-          <a href="index.html#biographie">Biographie</a>
-          <a href="index.html#contact">Contact</a>
+          <a href="index.html#albums">Ma musique</a>
+          <a href="index.html#mediatheque">Médiathèque</a>
+          <a href="index.html#direct">Live + Direct</a>
+          <a href="index.html#rechercher">Rechercher</a>
         </nav>
-        <div class="sidebar-card">
-          <span>Album</span>
-          <strong id="sidebarAlbumTitle">Archives</strong>
-          <small>Lecture et paroles</small>
-        </div>
+        <p class="nav-footer">Lecture album<br>Paroles et sons</p>
       </aside>
 
-      <div class="app-main">
-        <header class="topbar">
-          <a class="brand mobile-brand" href="index.html#accueil" aria-label="Accueil Ibrahima Diagne">
-            <span class="brand-mark">ID</span>
-            <span>Ibrahima Diagne</span>
-          </a>
-          <div class="topbar-actions">
-            <a href="index.html#albums">Albums</a>
-            <a href="index.html#contact">Contact</a>
-          </div>
+      <main class="content">
+        <header class="brand-area album-header">
+          <a class="back-link" href="index.html#albums">Retour aux albums</a>
+          <p class="page-kicker">Page album</p>
+          <h1 id="albumTitle">Album</h1>
+          <p id="albumDescription" class="album-description"></p>
         </header>
 
-        <main>
-      <section class="album-detail-hero">
-        <a class="back-link" href="index.html#albums">Retour aux albums</a>
-        <p class="eyebrow">Page album</p>
-        <h1 id="albumTitle">Album</h1>
-        <p id="albumDescription" class="lead"></p>
-      </section>
+        <section class="section">
+          <div class="section-title">
+            <h2 id="albumTrackCount">Sons de l'album</h2>
+          </div>
+          <div id="albumTracks" class="track-list" aria-live="polite"></div>
+        </section>
 
-      <section class="section album-detail-section">
-        <div class="section-heading">
-          <p class="eyebrow">Sons</p>
-          <h2 id="albumTrackCount">Sons de l'album</h2>
-        </div>
-        <div id="albumTracks" class="track-list"></div>
-      </section>
-
-      <section class="section lyrics-section">
-        <div class="section-heading">
-          <p class="eyebrow">Paroles</p>
-          <h2>Paroles du son sélectionné</h2>
-        </div>
-        <article id="albumLyricsPanel" class="lyrics-panel"></article>
-      </section>
-        </main>
-
-        <footer class="footer">
-          <span>&copy; 2026 Ibrahima Diagne</span>
-          <span>Achats en ligne non ouverts sur cette version.</span>
-        </footer>
-      </div>
+        <section class="section lyrics-section">
+          <div class="section-title">
+            <h2>Paroles</h2>
+            <p>Les paroles du son sélectionné.</p>
+          </div>
+          <article id="albumLyricsPanel" class="lyrics-panel"></article>
+        </section>
+      </main>
     </div>
 
-    <script src="scripts/album.js?v=20260606-rubriques"></script>
-  </body>
+    <footer class="bottom-player" aria-label="Lecteur audio">
+      <div class="player-inner">
+        <span id="playerCover" class="player-cover"></span>
+        <span class="player-text">
+          <h3 id="playerTitle">Aucun son lancé</h3>
+          <p id="playerMeta">Choisir un son dans la liste</p>
+        </span>
+        <button id="playerToggle" class="play-mini" type="button" aria-label="Lecture">▶</button>
+      </div>
+      <audio id="globalAudio" preload="none"></audio>
+    </footer>
+  </div>
+
+  <script src="scripts/album.js?v=20260606-player"></script>
+</body>
+
 </html>
