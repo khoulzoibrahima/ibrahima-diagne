@@ -1278,6 +1278,663 @@
           ]
         }
       ]
+    },
+    {
+      "id": "ibrahima-diagne-2010",
+      "title": "Ibrahima Diagne 2010",
+      "year": "2010",
+      "date": "2010-01-01",
+      "description": "Archives audio de l'année 2010.",
+      "tracks": [
+        {
+          "id": "2010-borom-jamano-ji",
+          "title": "Borom Jamano Ji",
+          "date": "2010-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2010/01-Borom%20Jamano%20Ji.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2010-cheikh-bi",
+          "title": "Cheikh-bi",
+          "date": "2010-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2010/02-Cheikh-bi.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2010-sant-mo-woor",
+          "title": "Sant mo woor",
+          "date": "2010-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2010/03-Sant%20mo%20woor.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2010-jaamu-serigne-saliou",
+          "title": "Jaamu SERIGNE SALIOU",
+          "date": "2010-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2010/04-Jaamu%20SERIGNE%20SALIOU.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2010-thierba",
+          "title": "Thierba",
+          "date": "2010-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2010/05-Thierba.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2010-tegou-ci-yoon",
+          "title": "Tegou ci yoon",
+          "date": "2010-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2010/06-Tegou%20ci%20yoon.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2010-melooma-nou-nex",
+          "title": "Melooma nou nex",
+          "date": "2010-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2010/07-Melooma%20nou%20nex.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2010-zimaamoul-warra",
+          "title": "Zimaamoul warra",
+          "date": "2010-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2010/08-Zimaamoul%20warra.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ibrahima-diagne-2011",
+      "title": "Ibrahima Diagne 2011",
+      "year": "2011",
+      "date": "2011-01-01",
+      "description": "Archives audio de l'année 2011.",
+      "tracks": [
+        {
+          "id": "2011-sant-serigne-saliou",
+          "title": "Sant Serigne SALIOU",
+          "date": "2011-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2011/01-Sant%20Serigne%20SALIOU.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2011-cheikhou-dounyaa",
+          "title": "Cheikhou Dounyaa",
+          "date": "2011-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2011/02-Cheikhou%20Dounyaa.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2011-dieummi-serigne-saliou",
+          "title": "Dieummi Serigne SALIOU",
+          "date": "2011-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2011/03-Dieummi%20Serigne%20SALIOU.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2011-yoonou-mouride",
+          "title": "Yoonou Mouride",
+          "date": "2011-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2011/04-Yoonou%20Mouride.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2011-wallou",
+          "title": "Wallou",
+          "date": "2011-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2011/05-Wallou.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2011-dou-man-dou-yeene",
+          "title": "Dou man dou yêêne",
+          "date": "2011-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2011/06-Dou%20man%20dou%20y%C3%AA%C3%AAne.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2011-thieurba",
+          "title": "Thieurba",
+          "date": "2011-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2011/07-Thieurba.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2011-magal",
+          "title": "Magal",
+          "date": "2011-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2011/08-Magal.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2011-bismil-ilaahi",
+          "title": "Bismil ilaahi",
+          "date": "2011-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2011/09-Bismil%20ilaahi.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ibrahima-diagne-2012",
+      "title": "Ibrahima Diagne 2012",
+      "year": "2012",
+      "date": "2012-01-01",
+      "description": "Archives audio de l'année 2012.",
+      "tracks": [
+        {
+          "id": "2012-yaa-rabbanaa",
+          "title": "YAA RABBANAA",
+          "date": "2012-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2012/01-YAA%20RABBANAA.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2012-serigne-saliou-si-jamano",
+          "title": "Serigne SALIOU si Jamano",
+          "date": "2012-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2012/02-Serigne%20SALIOU%20si%20Jamano.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2012-borom-jamano-jaangui",
+          "title": "Borom Jamano jaangui",
+          "date": "2012-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2012/03-Borom%20Jamano%20%20jaangui.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2012-jaam-moy-jalee",
+          "title": "Jaam moy jalée",
+          "date": "2012-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2012/04-Jaam%20moy%20jal%C3%A9e.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2012-doundal",
+          "title": "DOUNDAL",
+          "date": "2012-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2012/05-DOUNDAL.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2012-cheikh-moy-yoboo",
+          "title": "CHEIKH moy yoboo",
+          "date": "2012-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2012/06-CHEIKH%20moy%20yoboo.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2012-sunu-ndimbal",
+          "title": "Sunu ndimbal",
+          "date": "2012-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2012/07-Sunu%20ndimbal.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ibrahima-diagne-2014",
+      "title": "Ibrahima Diagne 2014",
+      "year": "2014",
+      "date": "2014-01-01",
+      "description": "Archives audio de l'année 2014.",
+      "tracks": [
+        {
+          "id": "2014-intro-xam-yalla",
+          "title": "Intro( Xam Yalla)",
+          "date": "2014-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2014/1_Intro(%20Xam%20Yalla).mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2014-serigne-saliou",
+          "title": "Serigne Saliou",
+          "date": "2014-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2014/2_Serigne%20Saliou.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2014-teraangua",
+          "title": "Teraangua",
+          "date": "2014-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2014/3_Teraangua.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2014-yaway-moom",
+          "title": "Yaway Moom",
+          "date": "2014-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2014/5_Yaway%20Moom.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2014-diaar-diaar",
+          "title": "Diaar Diaar",
+          "date": "2014-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2014/6_Diaar%20Diaar.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2014-daawaamou-choukry",
+          "title": "Daawaamou Choukry",
+          "date": "2014-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2014/7_Daawaamou%20Choukry.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2014-sangue-ak-diaam",
+          "title": "Sangue ak Diaam",
+          "date": "2014-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2014/8_Sangue%20ak%20Diaam.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2014-kennalla",
+          "title": "Kennalla",
+          "date": "2014-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2014/9_Kennalla.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2014-keeman",
+          "title": "Keeman",
+          "date": "2014-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2014/10_Keeman.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ibrahima-diagne-2015",
+      "title": "Ibrahima Diagne 2015",
+      "year": "2015",
+      "date": "2015-01-01",
+      "description": "Archives audio de l'année 2015.",
+      "tracks": [
+        {
+          "id": "2015-track-01",
+          "title": "Track 01",
+          "date": "2015-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2015/01%20Track%2001.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2015-track-02",
+          "title": "Track 02",
+          "date": "2015-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2015/02%20Track%2002.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2015-track-03",
+          "title": "Track 03",
+          "date": "2015-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2015/03%20Track%2003.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2015-track-04",
+          "title": "Track 04",
+          "date": "2015-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2015/04%20Track%2004.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2015-track-05",
+          "title": "Track 05",
+          "date": "2015-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2015/05%20Track%2005.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2015-track-06",
+          "title": "Track 06",
+          "date": "2015-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2015/06%20Track%2006.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2015-track-07",
+          "title": "Track 07",
+          "date": "2015-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2015/07%20Track%2007.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2015-track-08",
+          "title": "Track 08",
+          "date": "2015-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2015/08%20Track%2008.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ibrahima-diagne-2016",
+      "title": "Ibrahima Diagne 2016",
+      "year": "2016",
+      "date": "2016-01-01",
+      "description": "Archives audio de l'année 2016.",
+      "tracks": [
+        {
+          "id": "2016-track-1",
+          "title": "Track 1",
+          "date": "2016-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2016/01%20Track%201.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2016-track-2",
+          "title": "Track 2",
+          "date": "2016-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2016/02%20Track%202.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2016-track-3",
+          "title": "Track 3",
+          "date": "2016-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2016/03%20Track%203.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2016-track-4",
+          "title": "Track 4",
+          "date": "2016-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2016/04%20Track%204.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2016-track-5",
+          "title": "Track 5",
+          "date": "2016-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2016/05%20Track%205.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2016-track-6",
+          "title": "Track 6",
+          "date": "2016-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2016/06%20Track%206.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2016-track-7",
+          "title": "Track 7",
+          "date": "2016-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2016/07%20Track%207.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2016-track-8",
+          "title": "Track 8",
+          "date": "2016-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2016/08%20Track%208.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ibrahima-diagne-2017",
+      "title": "Ibrahima Diagne 2017",
+      "year": "2017",
+      "date": "2017-01-01",
+      "description": "Archives audio de l'année 2017.",
+      "tracks": [
+        {
+          "id": "2017-ibrahima-diagne-17-avril",
+          "title": "Ibrahima Diagne 17 Avril",
+          "date": "2017-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2017/Ibrahima%20Diagne%2017%20Avril.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2017-ibrahima-diagne-beug-gueum-djeuf",
+          "title": "Ibrahima Diagne Beug Gueum Djeuf",
+          "date": "2017-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2017/Ibrahima%20Diagne%20Beug%20Gueum%20Djeuf.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2017-ibrahima-diagne-dieuredieufe-serigne-saliou",
+          "title": "Ibrahima Diagne Dieuredieufé Serigne Saliou",
+          "date": "2017-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2017/Ibrahima%20Diagne%20Dieuredieuf%C3%A9%20Serigne%20Saliou.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2017-ibrahima-diagne-koula-topp-raw-cheikh-sale",
+          "title": "Ibrahima Diagne Koula topp raw Cheikh Sale",
+          "date": "2017-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2017/Ibrahima%20Diagne%20Koula%20topp%20raw%20Cheikh%20Sale.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        },
+        {
+          "id": "2017-ibrahima-diagne-serigne-aida",
+          "title": "Ibrahima Diagne Serigne Aïda",
+          "date": "2017-01-01",
+          "duration": "",
+          "audio": "ibrahima-diagne-2017/Ibrahima%20Diagne%20Serigne%20A%C3%AFda.mp3",
+          "price": "",
+          "lyrics": [
+            "Paroles en cours de transcription."
+          ]
+        }
+      ]
     }
   ]
 }
